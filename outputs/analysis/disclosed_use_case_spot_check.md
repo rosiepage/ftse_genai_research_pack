@@ -577,4 +577,33 @@ visible and can be overridden.
 
 Rows with a number that were deliberately **not** reclassified because the number describes reach/scale, not benefit (examples, not exhaustive): NWG-UC-001 ("99% of colleagues" -- coverage), VOD-UC-002 ("50,000 colleagues" -- reach), RTO-UC-001 ("one million occasions" -- usage volume, not a stated outcome), SDR-UC-001 ("40 investment cases" -- usage count), ENT-UC-001 ("65,000 users" -- reach).
 
+### 2. orientation / user_group: rows coded "internal"/single group that the quote itself contradicts
+
+**Test applied:** for every row coded `orientation = internal` or a single (non-`mixed`)
+`user_group`, checked whether the quote itself names a second, different party as a user or
+direct recipient of the tool's output (matching the BT-UC-001 pattern: "for its teams **and**
+Communications Provider customers"). Cases where a second party is mentioned only as an indirect
+beneficiary of an outcome (e.g. Aviva's "halved the time that customers are on hold" -- handlers
+use the tool, customers just experience the result) were **not** reclassified, since the tool
+itself has no external user in those cases -- only cases with a second named user/recipient were
+changed.
+
+**Result: 3 of 58 rows change. Corrected count -- orientation: internal 32 (was 35), mixed 6 (was 3),
+customer_facing 11 (unchanged), product_embedded 9 (unchanged). user_group: employees 32 (was 35),
+mixed 5 (was 2), customers 19 (unchanged), suppliers_or_partners 1 (unchanged), developers 1
+(unchanged).**
+
+| record_id | Company | Field | Old value | New value | Quote |
+|---|---|---|---|---|---|
+| BT-UC-001 | BT Group | orientation, user_group | internal / employees | **mixed / mixed** | "...helping to simplify processes and boost productivity for its teams **and Communications Provider customers**." |
+| CTEC-UC-001 | Convatec | orientation, user_group | internal / employees | **mixed / mixed** | "...expanding the deployment of AI-powered tools like Talkdesk in **customer interaction centres**." |
+| HSX-UC-001 | Hiscox | orientation, user_group | internal / employees | **mixed / mixed** | "...ready for underwriter review. As a result, Hiscox can provide **a broker** with an insurance quote in a matter of minutes." (a broker is an external intermediary, not a Hiscox employee) |
+
+**Note on the reverse pattern, not corrected here:** two rows (HSBA-UC-001, BA-UC-002) are
+currently coded `orientation = mixed` but their captured quotations show only one party (internal
+staff) -- the opposite problem from BT-UC-001 (over-coded rather than under-coded). This doesn't
+match the specific pattern asked for in this recheck (a coded single value contradicted by a
+named additional group), so these two rows were left unchanged here, but are flagged for a
+separate follow-up if useful.
+
 

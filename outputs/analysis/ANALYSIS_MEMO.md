@@ -130,11 +130,14 @@ gap in the coding.
 disclosed use cases are already live in some form** (limited or scaled), not merely planned or
 piloted — consistent with the strict evidence bar requiring a detailed operational description.
 
-**Orientation** (n=58): internal 35 (60%); customer_facing 11 (19%); product_embedded 9 (16%);
-mixed 3 (5%). Internal employee-productivity use dominates.
+**Orientation** (n=58): internal 32 (55%); customer_facing 11 (19%); product_embedded 9 (16%);
+mixed 6 (10%). Internal employee-productivity use still dominates, though less exclusively than
+first recorded (corrected 2026-08-09: 3 of 58 rows moved from internal to mixed after their
+quotations were found to name an external party the original coding missed --
+`outputs/analysis/disclosed_use_case_spot_check.md`).
 
-**User group** (n=58): employees 35 (60%); customers 19 (33%); mixed 2 (3%); suppliers_or_partners
-1 (2%); developers 1 (2%).
+**User group** (n=58): employees 32 (55%); customers 19 (33%); mixed 5 (9%); suppliers_or_partners
+1 (2%); developers 1 (2%). (Same 2026-08-09 correction as orientation, above.)
 
 **Technology partner** (named, n=58, some rows list more than one): Microsoft 13 (22%, by far the
 most frequently named — mostly Microsoft 365/GitHub Copilot variants); AWS 3 (5%, plus 1 more
@@ -412,8 +415,9 @@ dataset cannot resolve).
 5. **Evidence-strength variation (§6).** Roughly half of disclosed use cases rest on `2_moderate`
    evidence; 11 of 58 rows have a measured, quantified outcome (corrected 2026-08-09, was
    recorded as 1), but all 11 are company-self-reported figures, not independently audited.
-6. **Likely under-reporting of internal deployments.** Given that 60% of disclosed use cases are
-   already internal/employee-facing rather than customer-facing, and companies have limited
+6. **Likely under-reporting of internal deployments.** Given that 55% of disclosed use cases are
+   already internal/employee-facing rather than customer-facing (corrected 2026-08-09, was
+   recorded as 60%), and companies have limited
    incentive to publicise every internal tool, the true incidence of narrow, low-profile internal
    GenAI tools is almost certainly higher than what reaches annual-report-level disclosure.
 7. **Null-result interpretation (§7).** Documented as "no qualifying evidence in reviewed sources,"
@@ -441,10 +445,12 @@ dataset cannot resolve).
    the 87 companies with an evidence-based final status.** *Qualification:* the true population
    rate could be as high as ~51% if all 13 blocked companies qualified (§8) — this is a floor, not
    an estimate of the true rate.
-2. **Internal employee-productivity tools dominate the disclosed use-case landscape**: 60% of
-   disclosed use cases (35/58) are internally oriented, 60% (35/58) serve employees as the primary
-   user group, and Microsoft (chiefly via Copilot variants) is named in 22% of disclosed use cases
-   (13/58) — more than any other single technology signature. *Qualification:* this reflects what
+2. **Internal employee-productivity tools dominate the disclosed use-case landscape**: 55% of
+   disclosed use cases (32/58) are internally oriented, 55% (32/58) serve employees as the primary
+   user group (both corrected 2026-08-09 from an original 60%/35/58 each — 3 rows moved to
+   `mixed` after their quotations were found to name an external party too), and Microsoft
+   (chiefly via Copilot variants) is named in 22% of disclosed use cases (13/58) — more than any
+   other single technology signature. *Qualification:* this reflects what
    companies choose to disclose, which may itself favour headline-grabbing enterprise-software
    rollouts over quieter, more specialised internal tools.
 3. **Talk exceeds deployment**: 74.7% of evidence-based companies (65/87) show some AI-related

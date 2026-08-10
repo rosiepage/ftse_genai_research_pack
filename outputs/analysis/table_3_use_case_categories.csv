@@ -27,15 +27,17 @@ secondary_business_function,other,1,1.7%
 deployment_stage,live_limited,26,44.8%
 deployment_stage,live_scaled,24,41.4%
 deployment_stage,pilot,8,13.8%
-orientation,internal,35,60.3%
+orientation,internal,32,55.2%
 orientation,customer_facing,11,19.0%
 orientation,product_embedded,9,15.5%
-orientation,mixed,3,5.2%
-user_group,employees,35,60.3%
+orientation,mixed,6,10.3%
+orientation_note,"corrected 2026-08-09; see outputs/analysis/disclosed_use_case_spot_check.md",,
+user_group,employees,32,55.2%
 user_group,customers,19,32.8%
-user_group,mixed,2,3.4%
+user_group,mixed,5,8.6%
 user_group,suppliers_or_partners,1,1.7%
 user_group,developers,1,1.7%
+user_group_note,"corrected 2026-08-09; see outputs/analysis/disclosed_use_case_spot_check.md",,
 claimed_benefits (multi-label),productivity,29,50.0%
 claimed_benefits (multi-label),time_saving,25,43.1%
 claimed_benefits (multi-label),service_quality,8,13.8%
