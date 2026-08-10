@@ -599,11 +599,19 @@ mixed 5 (was 2), customers 19 (unchanged), suppliers_or_partners 1 (unchanged), 
 | CTEC-UC-001 | Convatec | orientation, user_group | internal / employees | **mixed / mixed** | "...expanding the deployment of AI-powered tools like Talkdesk in **customer interaction centres**." |
 | HSX-UC-001 | Hiscox | orientation, user_group | internal / employees | **mixed / mixed** | "...ready for underwriter review. As a result, Hiscox can provide **a broker** with an insurance quote in a matter of minutes." (a broker is an external intermediary, not a Hiscox employee) |
 
-**Note on the reverse pattern, not corrected here:** two rows (HSBA-UC-001, BA-UC-002) are
-currently coded `orientation = mixed` but their captured quotations show only one party (internal
-staff) -- the opposite problem from BT-UC-001 (over-coded rather than under-coded). This doesn't
-match the specific pattern asked for in this recheck (a coded single value contradicted by a
-named additional group), so these two rows were left unchanged here, but are flagged for a
-separate follow-up if useful.
+**Decision on the reverse pattern (HSBA-UC-001, BA-UC-002): left uncorrected, on purpose.** Both
+are coded `orientation = mixed` even though their captured quotation names only one party
+(internal staff); this was considered against the same standard as BT-UC-001/CTEC-UC-001/HSX-UC-001
+and deliberately not changed, for one reason: **a quote naming a second party is positive evidence
+that party exists, but a quote *not* naming a second party is not evidence that party doesn't
+exist** -- `evidence_quotation` is a short pull from a longer source document, and the human coder
+who set these two rows to `mixed` may have been reading passages elsewhere in that same document
+that this short excerpt doesn't include (HSBC's source, for instance, is a joint HSBC/Google Cloud
+partnership announcement almost certain to describe more than one application; BAE's Typhoon is
+flown by multiple allied air forces, not just BAE's own staff, so an external operator group is
+plausible even though this specific excerpt only shows internal maintenance-team language).
+Downgrading `mixed` to `internal` on the strength of one silent excerpt would be exactly the kind
+of unsupported inference this whole recheck exists to catch in the other direction -- it would
+swap an unverified upgrade for an unverified downgrade, not fix an error.
 
 
