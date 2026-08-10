@@ -148,8 +148,10 @@ this dataset.
 service_quality 8 (14%); personalisation 4 (7%); accuracy 4 (7%); risk_reduction 3 (5%);
 none_stated 3 (5%); accessibility 3 (5%); innovation 2 (3%); cost_reduction 2 (3%).
 
-**Benefit evidence** (n=58): expected 32 (55%); observed_unquantified 25 (43%); **measured
-(quantified, company-wide) 1 (2%)**. This is an important, sobering finding on its own — see §6.
+**Benefit evidence** (n=58): expected 23 (40%); observed_unquantified 24 (41%); **measured
+(quantified outcome with a defined metric or comparison) 11 (19%)**. See §6 for the full
+distribution and the 2026-08-09 recheck that corrected this from an original count of 1 measured
+row to 11 (`outputs/analysis/disclosed_use_case_spot_check.md`).
 
 ---
 
@@ -218,9 +220,10 @@ uses are multimodal/design-generation applications the "unstructured language in
 does not neatly cover, which is itself relevant to how the report frames the suitability
 framework's scope.
 
-**What the dataset cannot show:** none of the 58 use cases includes a rigorous before/after
-controlled comparison, and only 1 has a directly measured, company-wide quantified benefit
-(§3/§6). The task-suitability classification above is a structural judgement about the *kind* of
+**What the dataset cannot show:** none of the 58 use cases includes a rigorous, independently
+verified before/after controlled comparison — the 11 rows coded `measured` (§3/§6) are all
+company-self-reported figures (survey samples, pilot-phase measurements, single-quarter
+snapshots), not audited or externally validated outcomes. The task-suitability classification above is a structural judgement about the *kind* of
 task, not a verdict on whether each deployment is actually succeeding. **The thesis is about
 selecting tasks appropriately, not about proving those tasks are always executed well — this
 dataset can speak to the former far more confidently than the latter.**
@@ -263,22 +266,33 @@ operational bar.** Full list in `table_5_strategic_governance_vs_operational.csv
 | | medium | 28 | 48% |
 | evidence_origin (58 disclosed rows) | company_primary | 49 | 84% |
 | | technology_partner | 9 | 16% |
-| benefit_evidence (58 disclosed rows) | expected | 32 | 55% |
-| | observed_unquantified | 25 | 43% |
-| | **measured** | **1** | **2%** |
+| benefit_evidence (58 disclosed rows) | expected | 23 | 40% |
+| | observed_unquantified | 24 | 41% |
+| | **measured** | **11** | **19%** |
+
+**Correction (2026-08-09):** `benefit_evidence` was originally recorded as expected 32/55%,
+observed_unquantified 25/43%, measured 1/2%. A full-population recheck of all 58 quotations
+against the coding manual's own definition of `measured` ("quantified outcome with defined metric
+or comparison") found 10 rows miscoded as `expected` or `observed_unquantified` despite their
+quotation containing an explicit benefit-quantifying figure (e.g. RELX's "66 percent" time
+savings, Lion Finance Group's "6,600 hours per month...10% to 56%...40% reduction"). Full
+row-by-row detail, including the reasoning for numbers that were deliberately *not* reclassified
+(deployment-scale/reach figures such as "70,000 employees" or "one million occasions" do not
+quantify a benefit), is in `outputs/analysis/disclosed_use_case_spot_check.md`. The figures below
+use the corrected counts.
 
 **Interpretation for reliability of conclusions:** the disclosed dataset is skewed toward
 `2_moderate`/`3_strong` by construction (that is the inclusion rule), so this is not an
 independent quality check — but within that filtered set, roughly half (53%) rest on `2_moderate`
 evidence, meaning "the specific use case is clear, but scale, stage or outcomes are incomplete"
-per the coding manual's own definition. Combined with the benefit-evidence finding above (98% of
-claimed benefits are either purely anticipated or unquantified), **this dataset is well-suited to
-answering "is the company doing X with generative AI" but poorly suited to answering "is X
-working" or "how much value did X create."** Any report language about productivity gains,
-efficiency improvements, or ROI must be attributed explicitly to the company's own claim, not
-treated as independently verified — the 2%/1-row `measured` figure (AstraZeneca's Microsoft
-Copilot survey result, itself only a "surveyed sample, not company-wide" figure per its own
-`quantified_metric` field) is the single exception in the entire disclosed dataset.
+per the coding manual's own definition. Even with the corrected count, 81% of claimed benefits
+are either purely anticipated or observed-but-unquantified, and the 19% that are `measured` are
+still company-self-reported figures, not independently audited outcomes (survey samples,
+pilot-phase measurements, single-quarter snapshots) — **this dataset is better-suited to
+answering "is the company doing X with generative AI" than "is X working" or "how much value did
+X create," even after this correction.** Any report language about productivity gains, efficiency
+improvements, or ROI must be attributed explicitly to the company's own claim, not treated as
+independently verified.
 
 16% of disclosed evidence (9/58 rows) is `evidence_origin=technology_partner` — i.e. sourced from
 a vendor/partner case study rather than the company's own disclosure (e.g. Investec's Copilot for
@@ -396,7 +410,8 @@ dataset cannot resolve).
    companies may simply have stronger disclosure cultures around technology than mining or tobacco
    companies, independent of actual GenAI use).
 5. **Evidence-strength variation (§6).** Roughly half of disclosed use cases rest on `2_moderate`
-   evidence; only one row has a measured, company-wide quantified outcome.
+   evidence; 11 of 58 rows have a measured, quantified outcome (corrected 2026-08-09, was
+   recorded as 1), but all 11 are company-self-reported figures, not independently audited.
 6. **Likely under-reporting of internal deployments.** Given that 60% of disclosed use cases are
    already internal/employee-facing rather than customer-facing, and companies have limited
    incentive to publicise every internal tool, the true incidence of narrow, low-profile internal
@@ -450,10 +465,13 @@ dataset cannot resolve).
    validation — rather than being deployed as unmitigated autonomous decision-makers. *Qualification:*
    this is the strongest single piece of evidence in the dataset for the selective-deployment
    thesis, but it describes disclosed design choices, not independently verified safety outcomes.
-6. **Claimed benefits are overwhelmingly anticipatory, not measured**: only 1 of 58 disclosed use
-   cases (2%) carries a directly measured, quantified benefit; 55% are merely "expected." *Qualification:*
-   this dataset cannot support any claim about GenAI's actual productivity or financial impact at
-   FTSE 100 companies — only about what companies say they expect or have observed unquantified.
+6. **A minority of claimed benefits are measured, and even those are company-self-reported**: 11
+   of 58 disclosed use cases (19%, corrected 2026-08-09 from an original count of 1/58) carry a
+   quantified benefit figure in their source quotation; 40% are merely "expected." *Qualification:*
+   none of the 11 measured figures is independently audited (they are survey samples, pilot-phase
+   measurements, or single-quarter snapshots reported by the company itself) — this dataset still
+   cannot support any claim about GenAI's actual, verified productivity or financial impact at
+   FTSE 100 companies, only about what companies report having measured or say they expect.
 7. **Sector adoption varies widely (Banks 100%, Media 75%, Mining 17% among sectors with ≥3
    researched companies) but nearly every sector cell is too small for statistical inference.**
    *Qualification:* differences plausibly reflect disclosure culture and business-model fit as
@@ -504,8 +522,9 @@ dataset cannot resolve).
 
 **Claims the dataset cannot establish:**
 - Whether companies that deploy GenAI into poorly-suited tasks experience worse outcomes than
-  those that deploy it into well-suited tasks (no outcome/failure data exists in this dataset).
-  See #6 & the near-total absence of measured benefit evidence, §6/§10.
+  those that deploy it into well-suited tasks (no independently audited outcome/failure data
+  exists in this dataset — even the 19% of rows with a measured benefit figure rely on the
+  company's own self-reported measurement). See #6, §6/§10.
 - Whether the observed pattern reflects deliberate task-suitability reasoning by companies, or
   simply reflects which tasks happen to be easiest/cheapest/least risky to disclose publicly.
 - Any claim about the true FTSE 100-wide picture, given the unresolved 13-company gap (§8) and the

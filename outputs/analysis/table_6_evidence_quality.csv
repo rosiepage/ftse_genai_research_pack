@@ -8,6 +8,7 @@ confidence_58_disclosed,medium,28,48.3%
 confidence_58_disclosed,high,30,51.7%
 evidence_origin_58_disclosed,company_primary,49,84.5%
 evidence_origin_58_disclosed,technology_partner,9,15.5%
-benefit_evidence_58_disclosed,measured,1,1.7%
-benefit_evidence_58_disclosed,observed_unquantified,25,43.1%
-benefit_evidence_58_disclosed,expected,32,55.2%
+benefit_evidence_58_disclosed,measured,11,19.0%
+benefit_evidence_58_disclosed,observed_unquantified,24,41.4%
+benefit_evidence_58_disclosed,expected,23,39.7%
+benefit_evidence_58_disclosed_note,"corrected 2026-08-09 after full-population recheck against evidence_quotation text; see outputs/analysis/disclosed_use_case_spot_check.md -- 10 of 58 rows moved to measured (was 1, now 11)",,

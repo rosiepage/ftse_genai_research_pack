@@ -530,3 +530,51 @@ state the benefit elsewhere in a passage that wasn't pulled into `evidence_quota
 means this sample cannot confirm those specific `claimed_benefits` values from the recorded
 evidence alone, only from the fuller (unreviewed-here) source document.
 
+---
+
+## Full-population recheck (all 58 rows), following up the REL-UC-002 and BT-UC-001 findings
+
+The two discrepancies found above were checked against the *full* 58-row population, not just
+the 20-row sample, since both looked like they could be systematic rather than one-off. Both
+checks used the coding manual's own definitions (`03_CODING_MANUAL.md`) as the test, applied to
+every row's `evidence_quotation`. `claimed_benefits` was explicitly excluded from this pass, per
+instruction -- that field mixes extraction and inference in a way that needs its own definitional
+conversation before deciding what counts as an error. The live `use_case_dataset_template.csv` is
+**not** modified by this recheck -- only the derived analysis outputs (`ANALYSIS_MEMO.md`, the
+`table_*.csv` files) are updated to reflect corrected counts, exactly as instructed. Changing the
+authoritative dataset's own field values would need a full human-reviewed pass, not a
+single-session recheck of two patterns.
+
+### 1. benefit_evidence: measured vs. observed_unquantified / expected
+
+**Test applied:** per the coding manual, `measured` = "quantified outcome with defined metric or
+comparison"; `observed_unquantified` = "source claims an experienced benefit without a number";
+`expected` = "benefit is prospective." A row was reclassified to `measured` only where the quote
+contains a number that quantifies the *benefit/outcome itself* (time saved, error/cost reduction,
+adoption-rate change, a stated before/after comparison) -- not merely a number describing
+deployment scale, reach, or headcount (e.g. "70,000 employees," "20 sites," "65,000 users" were
+deliberately NOT reclassified; they describe how many people have access, not what benefit
+resulted). Rows using an approximate figure ("hundreds of hours," "approximately 200 hours") are
+still counted as `measured` under the manual's own wording, which requires "a defined metric,"
+not necessarily an exact one -- flagged with a caveat below so this specific judgement call is
+visible and can be overridden.
+
+**Result: 10 of 58 rows change category. Corrected count: measured 11 (was 1), observed_unquantified
+24 (was 25), expected 23 (was 32).**
+
+| record_id | Company | Old value | New value | Quote | Caveat |
+|---|---|---|---|---|---|
+| REL-UC-002 | RELX | observed_unquantified | **measured** | "Early access users reported time savings of up to 66 percent per search and review session." | -- |
+| BT-UC-004 | BT Group | expected | **measured** | "Amazon Q Developer generates over 2 million lines of code per year for BT Group, compared with 2.5-3 million lines of code that developers previously produced annually." | -- |
+| SHEL-UC-001 | Shell plc | expected | **measured** | "...uses deep learning to generate reliable subsurface images using far fewer seismic shots -- as little as 1% in completed field trials -- than traditionally necessary." | Trial already completed, not prospective. |
+| AV-UC-001 | Aviva | expected | **measured** | "...our GenAI claims summarisation tool is used by over 500 handlers and has halved the time that customers are on hold." | -- |
+| HSX-UC-002 | Hiscox | expected | **measured** | "Identifying and recording the key information from a new claim now takes him as little as 10 minutes -- a task that previously took up to an hour." | -- |
+| SPX-UC-001 | Spirax Group | expected | **measured** | "...MiM was piloted with 200 sales colleagues, with usage freeing up approximately four hours of their time per person, per week..." | -- |
+| BGEO-UC-001 | Lion Finance Group | expected | **measured** | "...our GenAI chatbot that resolves 65% of queries without human intervention whilst achieving a 91% customer satisfaction score..." | -- |
+| BGEO-UC-002 | Lion Finance Group | expected | **measured** | "Employees built 300+ custom AI assistants, freeing up 6,600 hours per month...Weekly adoption rate increased from 10% to 56%...40% reduction in document analysis time." | Clearest case in the dataset -- four independent quantified metrics in one quote. |
+| CNA-UC-001 | Centrica | expected | **measured** | "...saving employees hundreds of hours a year." | "Hundreds" is an order-of-magnitude figure, not exact -- judgement call, flagged for override. |
+| INVP-UC-001 | Investec | expected | **measured** | "'We're estimating that we're making approximately 200 hours of savings a year across the bank.'" | Company itself frames this as an estimate ("we're estimating...approximately") -- judgement call, flagged for override. |
+
+Rows with a number that were deliberately **not** reclassified because the number describes reach/scale, not benefit (examples, not exhaustive): NWG-UC-001 ("99% of colleagues" -- coverage), VOD-UC-002 ("50,000 colleagues" -- reach), RTO-UC-001 ("one million occasions" -- usage volume, not a stated outcome), SDR-UC-001 ("40 investment cases" -- usage count), ENT-UC-001 ("65,000 users" -- reach).
+
+
