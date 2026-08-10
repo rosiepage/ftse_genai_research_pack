@@ -577,6 +577,38 @@ visible and can be overridden.
 
 Rows with a number that were deliberately **not** reclassified because the number describes reach/scale, not benefit (examples, not exhaustive): NWG-UC-001 ("99% of colleagues" -- coverage), VOD-UC-002 ("50,000 colleagues" -- reach), RTO-UC-001 ("one million occasions" -- usage volume, not a stated outcome), SDR-UC-001 ("40 investment cases" -- usage count), ENT-UC-001 ("65,000 users" -- reach).
 
+### Follow-up: INVP-UC-001 checked against its full source document, not just the excerpt
+
+The captured `evidence_quotation` for INVP-UC-001 ends on a line the source itself frames as an
+estimate: "'We're estimating that we're making approximately 200 hours of savings a year across
+the bank.'" Read in isolation, that phrasing is closer to `expected` (prospective) than
+`measured` (an outcome that was actually measured). The full source document
+(`sources/investec/INVP_partner_partner_case_study_n-a.txt`, a Microsoft customer-story case
+study) was checked for a retrospective, already-observed figure elsewhere in the same document,
+per instruction. One exists, a few sentences earlier:
+
+> "Now, bankers are seamlessly making CRM updates right in Outlook, shaving as much as 10 seconds
+> off each post-call activity. Given the volume at Investec, that's a significant time savings. In
+> fact, according to the metrics that Copilot tracks, which has allowed the company to compare the
+> work of bankers who still use the legacy system with that of bankers who are using Copilot for
+> Sales, Speirits contends 'we're estimating that we're making approximately 200 hours of savings a
+> year across the bank.'"
+
+This sentence is stated factually, present-tense ("bankers **are** shaving"), and is explicitly
+tied to a real comparison methodology -- Copilot's own tracked metrics, comparing bankers still on
+the legacy system against bankers using Copilot for Sales -- not a projection. The "200 hours a
+year" figure is the company's own extrapolation *from* that tracked, retrospective comparison,
+which is why its own spokesperson hedges the annualised total as "estimating...approximately."
+
+**Decision: `benefit_evidence` stays `measured` (not reverted to `expected`)**, because a
+retrospective, already-observed figure does exist in the full source, per the instruction's own
+condition. But this is worth being precise about: the specific text captured in
+`evidence_quotation` is the hedged annualised estimate, not the more solidly-grounded per-activity
+figure that actually underpins it. That's a gap in what was captured into the dataset's
+`evidence_quotation` field, not a benefit_evidence miscoding -- flagged here rather than silently
+fixed, since editing `evidence_quotation` itself is outside this session's authorisation (analysis
+layer only, live dataset untouched).
+
 ### 2. orientation / user_group: rows coded "internal"/single group that the quote itself contradicts
 
 **Test applied:** for every row coded `orientation = internal` or a single (non-`mixed`)
