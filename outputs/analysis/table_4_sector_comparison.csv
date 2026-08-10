@@ -1,4 +1,4 @@
-sector,researched,confirmed_operational,confirmed_op_rate_of_researched,confirmed_use_cases,null_result,blocked,total_in_sector_incl_blocked,small_sample_flag
+sector,researched,disclosed_operational,disclosed_op_rate_of_researched,disclosed_use_cases,null_result,blocked,total_in_sector_incl_blocked,small_sample_flag
 Aerospace & defence,4,2,50%,4,2,0,4,caution - n<5
 Banking services,1,1,100%,2,0,0,1,YES - n<3
 Banks,4,4,100%,6,0,1,5,

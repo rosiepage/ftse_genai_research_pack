@@ -1,5 +1,5 @@
 status,definition,company_count,pct_of_100
-confirmed_operational,confirmed_use_case_count >= 1 in company_summary_template.csv,38,38.0%
-completed_null_result,"confirmed_use_case_count == 0, evidence-based final status reached",49,49.0%
+disclosed_operational,disclosed_use_case_count (recorded in the source file as confirmed_use_case_count) >= 1 in company_summary_template.csv,38,38.0%
+completed_null_result,"disclosed_use_case_count (recorded in the source file as confirmed_use_case_count) == 0, evidence-based final status reached",49,49.0%
 blocked_manual_browser,source collection could not be completed with available tools,13,13.0%
 TOTAL,"sum (cross-checked against ftse100_constituents_2026-06-19.csv, no omissions/duplicates)",100,100.0%

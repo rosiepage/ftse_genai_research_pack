@@ -23,9 +23,9 @@ they are correct.
   Microsoft 365 Copilot, ChatGPT, Claude, Gemini), or describe generation of text/code/images/audio
   through a clearly identified generative model. Predictive AI, conventional ML, and vague "AI is
   important" statements are explicitly excluded.
-- **`confirmed_use_case_count`** (the strict count used throughout this memo unless stated
+- **`disclosed_use_case_count`** (recorded in the source file as `confirmed_use_case_count`; the strict count used throughout this memo unless stated
   otherwise): `is_genai=yes`, `evidence_strength` in `{2_moderate, 3_strong}` (never `1_weak`),
-  `review_status` in `{reviewed_confirmed, reviewed_corrected}`, `duplicate_of_record_id` blank.
+  `review_status` in `{reviewed_disclosed, reviewed_corrected}`, `duplicate_of_record_id` blank.
 - **`provisional_use_case_count`**: as above but also includes `1_weak` evidence and
   not-yet-reviewed rows — a looser, "appears to qualify" count.
 - Companies are in one of three final states: **`promoted_complete`** (operational evidence found
@@ -40,15 +40,15 @@ they are correct.
 | Status | Companies | Source |
 |---|---|---|
 | Evidence-based final status (in `company_summary_template.csv`) | 87 | direct row count |
-| — of which confirmed operational (`confirmed_use_case_count >= 1`) | 38 | recomputed field sum |
-| — of which null result (`confirmed_use_case_count == 0`) | 49 | recomputed field sum |
+| — of which disclosed operational (`disclosed_use_case_count >= 1`) | 38 | recomputed field sum |
+| — of which null result (`disclosed_use_case_count == 0`) | 49 | recomputed field sum |
 | Blocked (`manual_browser_resolution_queue_controller.csv`) | 13 | distinct `company` values |
 | **Total FTSE 100 constituents** | **100** | cross-checked against `ftse100_constituents_2026-06-19.csv`: every constituent appears in exactly one of the two files above, no omissions, no duplicates |
 
-Confirmed operational use cases: **58**. Provisional use cases: **63**. Both independently
-recomputed by summing `confirmed_use_case_count` / `provisional_use_case_count` across all 87
+Disclosed operational use cases: **58**. Provisional use cases: **63**. Both independently
+recomputed by summing `disclosed_use_case_count` / `provisional_use_case_count` across all 87
 company-summary rows, and cross-checked by recomputing directly from `use_case_dataset_template.csv`
-(63 rows total; 58 pass the strict confirmed-row test defined above; the other 5 are either
+(63 rows total; 58 pass the strict disclosed-row test defined above; the other 5 are either
 `1_weak` evidence or `not_reviewed`). Both routes agree.
 
 ### Important correction to the input brief's figures
@@ -58,12 +58,12 @@ The task brief for this phase stated 47 `promoted_complete` companies. **The aut
 (Admiral Group, Barratt Redrow, British Land, Croda International, Informa, National Grid plc,
 Next plc, Smiths Group, Whitbread) were carried in the project's session-tracking checkpoint
 (`master_controller_checkpoint.json`) under `promoted_companies`, but every one of them has
-`confirmed_use_case_count = 0` in the actual dataset — genuine null results, several explicitly
+`disclosed_use_case_count = 0` in the actual dataset — genuine null results, several explicitly
 documented as such in `PROJECT_PROGRESS.md`'s own Loop 3 notes (e.g. "Next plc: provisional 0,
-confirmed 0 (no qualifying GenAI evidence found)"). The checkpoint's "promoted_complete" label
+disclosed 0 (no qualifying GenAI evidence found)"). The checkpoint's "promoted_complete" label
 drifted from its own definition somewhere over the project's long multi-session history — most
 plausibly because early sessions used it loosely to mean "the company's pipeline run completed
-successfully" rather than strictly "has a confirmed operational use case." **This memo treats
+successfully" rather than strictly "has a disclosed operational use case." **This memo treats
 `company_summary_template.csv` as ground truth throughout**, per the instruction to use the
 snapshot's actual datasets, not secondary tracking artifacts. This is flagged again in §9
 (Limitations) as a project transparency matter, not swept under the rug.
@@ -83,7 +83,7 @@ left untouched per the read-only rule.
 
 | Metric | Denominator A: all 100 FTSE 100 | Denominator B: 87 evidence-based only |
 |---|---|---|
-| Companies with **confirmed** operational GenAI use case | 38 / 100 = **38.0%** | 38 / 87 = **43.7%** |
+| Companies with **disclosed** operational GenAI use case | 38 / 100 = **38.0%** | 38 / 87 = **43.7%** |
 | Companies with **null result** (no qualifying evidence) | 49 / 100 = **49.0%** | 49 / 87 = **56.3%** |
 | Companies **blocked** (status unresolved) | 13 / 100 = **13.0%** | n/a (excluded from B by definition) |
 
@@ -93,19 +93,19 @@ adoption only among companies this project actually reached a verdict on. Every 
 in the eventual report should state which denominator is in use. See §8 for the full sensitivity
 analysis of what the 13 blocked companies could do to Denominator A.
 
-**Distribution of confirmed use cases per company** (among the 38 companies with ≥1):
+**Distribution of disclosed use cases per company** (among the 38 companies with ≥1):
 
-| Confirmed use cases | Companies |
+| Disclosed use cases | Companies |
 |---|---|
 | 1 | 26 |
 | 2 | 6 |
 | 3 | 4 |
 | 4 | 2 |
 
-Most adopting companies (26/38 = 68%) have exactly one confirmed use case. A small number of
+Most adopting companies (26/38 = 68%) have exactly one disclosed use case. A small number of
 companies with the richest, most itemised disclosures (RELX, BAE Systems, Aviva, BT Group,
 Diageo, Lion Finance Group, Standard Chartered, HSBC, Hiscox, Schroders — companies with 2–4
-confirmed rows) disproportionately shape the operational-use-case totals; see §5.
+disclosed rows) disproportionately shape the operational-use-case totals; see §5.
 
 ---
 
@@ -122,12 +122,12 @@ other 8 (14%); research_development 6 (10%); risk_legal_compliance 6 (10%); soft
 The large "other" category (8 rows, 14%) is almost entirely general-purpose internal productivity
 Copilot-style rollouts with no single named function (e.g. Barclays', Severn Trent's, Standard
 Chartered's SC GPT, NatWest's AI Digital Enabler, Schroders' Genie, Aviva's/Convatec's/Segro's
-company-wide rollouts) — these are real, confirmed deployments, but the "task" is deliberately
+company-wide rollouts) — these are real, disclosed deployments, but the "task" is deliberately
 generic (broad employee productivity), which is itself an analytically meaningful pattern, not a
 gap in the coding.
 
 **Deployment stage** (n=58): live_limited 26 (45%); live_scaled 24 (41%); pilot 8 (14%). **86% of
-confirmed use cases are already live in some form** (limited or scaled), not merely planned or
+disclosed use cases are already live in some form** (limited or scaled), not merely planned or
 piloted — consistent with the strict evidence bar requiring a detailed operational description.
 
 **Orientation** (n=58): internal 35 (60%); customer_facing 11 (19%); product_embedded 9 (16%);
@@ -155,7 +155,7 @@ none_stated 3 (5%); accessibility 3 (5%); innovation 2 (3%); cost_reduction 2 (3
 
 ## 4. Task-based analysis: does the observed operational use fit the "suitable LLM task" criteria?
 
-Each of the 58 confirmed use cases was individually read and classified against three axes: (a)
+Each of the 58 disclosed use cases was individually read and classified against three axes: (a)
 **input type** — is the model's input genuinely unstructured natural language, or structured/
 non-language data pressed into a generative pipeline?; (b) **output type** — is the output
 genuinely interpretive/generative (drafting, summarising, conversing, synthesising), or does the
@@ -179,7 +179,7 @@ medium (customer-facing or process-relevant but not safety/financial-critical), 
 **"Classic good fit"** (unstructured language input + generative/interpretive output + low-or-medium
 cost of error, simultaneously): **37 / 58 = 64%**. This is the pattern the thesis would predict
 companies gravitate toward, and it is indeed the modal pattern — but it is not the overwhelming
-majority; more than a third of confirmed use cases sit outside this "textbook" zone.
+majority; more than a third of disclosed use cases sit outside this "textbook" zone.
 
 **The 11 high-cost-of-error use cases (19% of the dataset) are the most analytically important
 group for the task-suitability question.** They are: RELX's Lexis+/Protege legal research,
@@ -209,11 +209,11 @@ flagging separately rather than folding into "good fit": Rolls-Royce/Databricks'
 generation, Shell/SparkCognition's seismic-image generation, Diageo's bottle-personalisation and
 cocktail-recommendation platforms, Tesco's ad-creative generator, Auto Trader's vehicle-description
 writer, Intertek/Synthesia's training-video generator, and AstraZeneca's foundation-model
-hypothesis generation from real-world-evidence data. These are legitimate, confirmed generative-AI
+hypothesis generation from real-world-evidence data. These are legitimate, disclosed generative-AI
 deployments (they meet `is_genai=yes` on named-model or generation-of-content grounds), but the
 *input* is not "unstructured language" in the classic sense — it is structured data, design
 parameters, or guided-selection inputs. **The dataset therefore does not support a claim that
-GenAI adoption is confined to natural-language-input tasks**; a meaningful minority of confirmed
+GenAI adoption is confined to natural-language-input tasks**; a meaningful minority of disclosed
 uses are multimodal/design-generation applications the "unstructured language input" criterion
 does not neatly cover, which is itself relevant to how the report frames the suitability
 framework's scope.
@@ -231,14 +231,14 @@ dataset can speak to the former far more confidently than the latter.**
 
 | Group | Companies | Share of 87 |
 |---|---|---|
-| ≥1 confirmed operational use case | 38 | 43.7% |
+| ≥1 disclosed operational use case | 38 | 43.7% |
 | ≥1 strategic-capability-building finding (`strategic_capability_building_findings.csv`) | 33 | 37.9% |
 | ≥1 governance/enablement finding (`governance_and_enablement_findings.csv`) | 50 | 57.5% |
 | **Any** of the above three | 65 | 74.7% |
-| **Strategic or governance evidence, but NO confirmed operational use case** | **27** | **31.0%** |
+| **Strategic or governance evidence, but NO disclosed operational use case** | **27** | **31.0%** |
 | **No qualifying evidence of any kind** (no strategic, governance or operational finding) | 22 | 25.3% |
 
-The 27 "talk without confirmed deployment" companies include 3i, Aberdeen Group, Admiral Group,
+The 27 "talk without disclosed deployment" companies include 3i, Aberdeen Group, Admiral Group,
 Airtel Africa, Anglo American, Babcock International, Beazley, British American Tobacco, Bunzl,
 Coca-Cola Europacific Partners, DCC plc, Diploma, Fresnillo, Howdens Joinery, IG Group, IHG Hotels
 & Resorts, Informa, Intermediate Capital Group, International Airlines Group, JD Sports, Prudential
@@ -257,17 +257,17 @@ operational bar.** Full list in `table_5_strategic_governance_vs_operational.csv
 | evidence_strength (all 63 use-case rows) | 3_strong | 27 | 43% |
 | | 2_moderate | 34 | 54% |
 | | 1_weak | 2 | 3% |
-| evidence_strength (58 **confirmed** rows only) | 3_strong | 27 | 47% |
+| evidence_strength (58 **disclosed** rows only) | 3_strong | 27 | 47% |
 | | 2_moderate | 31 | 53% |
-| confidence (58 confirmed rows) | high | 30 | 52% |
+| confidence (58 disclosed rows) | high | 30 | 52% |
 | | medium | 28 | 48% |
-| evidence_origin (58 confirmed rows) | company_primary | 49 | 84% |
+| evidence_origin (58 disclosed rows) | company_primary | 49 | 84% |
 | | technology_partner | 9 | 16% |
-| benefit_evidence (58 confirmed rows) | expected | 32 | 55% |
+| benefit_evidence (58 disclosed rows) | expected | 32 | 55% |
 | | observed_unquantified | 25 | 43% |
 | | **measured** | **1** | **2%** |
 
-**Interpretation for reliability of conclusions:** the confirmed dataset is skewed toward
+**Interpretation for reliability of conclusions:** the disclosed dataset is skewed toward
 `2_moderate`/`3_strong` by construction (that is the inclusion rule), so this is not an
 independent quality check — but within that filtered set, roughly half (53%) rest on `2_moderate`
 evidence, meaning "the specific use case is clear, but scale, stage or outcomes are incomplete"
@@ -278,12 +278,12 @@ working" or "how much value did X create."** Any report language about productiv
 efficiency improvements, or ROI must be attributed explicitly to the company's own claim, not
 treated as independently verified — the 2%/1-row `measured` figure (AstraZeneca's Microsoft
 Copilot survey result, itself only a "surveyed sample, not company-wide" figure per its own
-`quantified_metric` field) is the single exception in the entire confirmed dataset.
+`quantified_metric` field) is the single exception in the entire disclosed dataset.
 
-16% of confirmed evidence (9/58 rows) is `evidence_origin=technology_partner` — i.e. sourced from
+16% of disclosed evidence (9/58 rows) is `evidence_origin=technology_partner` — i.e. sourced from
 a vendor/partner case study rather than the company's own disclosure (e.g. Investec's Copilot for
 Sales case study, Hiscox's Microsoft case study, Rolls-Royce's Databricks case study). Per Core
-Rule 6, these are preserved with this label rather than treated as company-confirmed; they should
+Rule 6, these are preserved with this label rather than treated as company-disclosed; they should
 be flagged as such wherever cited in the final report.
 
 ---
@@ -336,7 +336,7 @@ The 13 blocked companies, with sector (merged labels) and blocker type:
 | IMI | Industrial engineering | HTTP 403 (persistent) |
 | Coca-Cola HBC | Beverages | HTTP 403 (persistent) |
 
-**Statistic A (all 100 FTSE 100 constituents):** 38/100 = **38.0%** confirmed operational adoption.
+**Statistic A (all 100 FTSE 100 constituents):** 38/100 = **38.0%** disclosed operational adoption.
 **Statistic B (87 evidence-based companies only):** 38/87 = **43.7%**.
 
 **These 13 companies should not be assumed to resemble the 87 that were researched.** Two
@@ -344,12 +344,12 @@ specific reasons this project's own records give for caution, not for assuming e
 lower true rate:
 
 1. **Sector composition is not representative of the full population.** Banks (where the 4
-   researched companies show 100% confirmed adoption) contain one blocked company (Lloyds); if
+   researched companies show 100% disclosed adoption) contain one blocked company (Lloyds); if
    Lloyds followed the observed within-sector pattern it alone would move Denominator A by a full
    percentage point, but this is speculation, not evidence — no Lloyds-specific GenAI disclosure
    was ever verified.
 2. **The manual-browser queue itself records specific, named, unverified leads for several
-   blocked companies** that — if eventually confirmed — could plausibly qualify: BP's "Wells
+   blocked companies** that — if eventually disclosed — could plausibly qualify: BP's "Wells
    Assistant" (described in an unreachable BP speech as an LLM-based automated-upstream tool);
    Sage's "Sage Copilot," a named generative-AI product with an unreachable one-year-anniversary
    press release; Unilever's AI-driven product-photography tooling. None of these could be
@@ -369,7 +369,7 @@ unknown:
 | 6 | 44.0% |
 | 13 (all) | 51.0% |
 
-**The correct scientific statement is: the true FTSE 100 confirmed-adoption rate lies somewhere
+**The correct scientific statement is: the true FTSE 100 disclosed-adoption rate lies somewhere
 in the closed interval [38.0%, 51.0%], and this project's tools cannot narrow that interval
 further.** 38.0% is a firm, evidence-based floor; 51.0% is a logical ceiling; the true value is
 unknown and should not be estimated by extrapolating from the 87 researched companies, precisely
@@ -395,9 +395,9 @@ dataset cannot resolve).
    sector variation in §Table 4 as true adoption differences (e.g. financial-services and media
    companies may simply have stronger disclosure cultures around technology than mining or tobacco
    companies, independent of actual GenAI use).
-5. **Evidence-strength variation (§6).** Roughly half of confirmed use cases rest on `2_moderate`
+5. **Evidence-strength variation (§6).** Roughly half of disclosed use cases rest on `2_moderate`
    evidence; only one row has a measured, company-wide quantified outcome.
-6. **Likely under-reporting of internal deployments.** Given that 60% of confirmed use cases are
+6. **Likely under-reporting of internal deployments.** Given that 60% of disclosed use cases are
    already internal/employee-facing rather than customer-facing, and companies have limited
    incentive to publicise every internal tool, the true incidence of narrow, low-profile internal
    GenAI tools is almost certainly higher than what reaches annual-report-level disclosure.
@@ -422,26 +422,26 @@ dataset cannot resolve).
 
 ## 10. Key findings (5–8, for the report's backbone)
 
-1. **Confirmed operational GenAI adoption reaches 38.0% of the full FTSE 100 (38/100) and 43.7% of
+1. **Disclosed operational GenAI adoption reaches 38.0% of the full FTSE 100 (38/100) and 43.7% of
    the 87 companies with an evidence-based final status.** *Qualification:* the true population
    rate could be as high as ~51% if all 13 blocked companies qualified (§8) — this is a floor, not
    an estimate of the true rate.
-2. **Internal employee-productivity tools dominate the confirmed use-case landscape**: 60% of
-   confirmed use cases (35/58) are internally oriented, 60% (35/58) serve employees as the primary
-   user group, and Microsoft (chiefly via Copilot variants) is named in 22% of confirmed use cases
+2. **Internal employee-productivity tools dominate the disclosed use-case landscape**: 60% of
+   disclosed use cases (35/58) are internally oriented, 60% (35/58) serve employees as the primary
+   user group, and Microsoft (chiefly via Copilot variants) is named in 22% of disclosed use cases
    (13/58) — more than any other single technology signature. *Qualification:* this reflects what
    companies choose to disclose, which may itself favour headline-grabbing enterprise-software
    rollouts over quieter, more specialised internal tools.
 3. **Talk exceeds deployment**: 74.7% of evidence-based companies (65/87) show some AI-related
-   evidence (strategic, governance, or operational), but only 43.7% (38/87) have a confirmed
+   evidence (strategic, governance, or operational), but only 43.7% (38/87) have a disclosed
    operational deployment — meaning 31.0% of the evidence-based sample (27/87) discusses AI
-   strategy or governance with no confirmed use case. *Qualification:* "no confirmed use case"
+   strategy or governance with no disclosed use case. *Qualification:* "no disclosed use case"
    reflects this project's strict evidentiary bar, not proof the company has literally deployed
    nothing.
 4. **The task-suitability framework is broadly, but not overwhelmingly, supported by the observed
-   pattern of use**: 64% of confirmed use cases (37/58) combine unstructured language input,
+   pattern of use**: 64% of disclosed use cases (37/58) combine unstructured language input,
    generative/interpretive output, and low-or-medium cost of error — the "classic good fit"
-   pattern. *Qualification:* more than a third of confirmed use cases (21/58) fall outside this
+   pattern. *Qualification:* more than a third of disclosed use cases (21/58) fall outside this
    pattern, split between structured/non-language-input applications (14%) and higher-stakes,
    more-controlled deployments (19%) — the framework describes a *tendency*, not a rule the data
    universally obeys.
@@ -450,7 +450,7 @@ dataset cannot resolve).
    validation — rather than being deployed as unmitigated autonomous decision-makers. *Qualification:*
    this is the strongest single piece of evidence in the dataset for the selective-deployment
    thesis, but it describes disclosed design choices, not independently verified safety outcomes.
-6. **Claimed benefits are overwhelmingly anticipatory, not measured**: only 1 of 58 confirmed use
+6. **Claimed benefits are overwhelmingly anticipatory, not measured**: only 1 of 58 disclosed use
    cases (2%) carries a directly measured, quantified benefit; 55% are merely "expected." *Qualification:*
    this dataset cannot support any claim about GenAI's actual productivity or financial impact at
    FTSE 100 companies — only about what companies say they expect or have observed unquantified.
@@ -459,7 +459,7 @@ dataset cannot resolve).
    *Qualification:* differences plausibly reflect disclosure culture and business-model fit as
    much as true underlying adoption gaps; no sector ranking in this memo should be over-interpreted.
 8. **Null results and blocked companies together account for 62% of the full FTSE 100 (49 null +
-   13 blocked = 62/100)**, and neither group can be safely treated as "confirmed non-adopters."
+   13 blocked = 62/100)**, and neither group can be safely treated as "disclosed non-adopters."
    *Qualification:* the true adoption rate for the FTSE 100 as a whole remains genuinely
    uncertain; this project can defensibly claim a floor of 38%, not a point estimate.
 
@@ -471,7 +471,7 @@ dataset cannot resolve).
 > rather than assuming that any task involving language is automatically suitable for an LLM."
 
 **Evidence supporting the thesis:**
-- The modal, most common pattern of confirmed deployment (64%, §4) is exactly the "good fit"
+- The modal, most common pattern of disclosed deployment (64%, §4) is exactly the "good fit"
   profile the thesis would predict: unstructured language in, generative/interpretive language
   out, low-or-medium consequence if wrong.
 - Where companies do deploy GenAI into high-cost-of-error tasks (19% of use cases), the
@@ -485,16 +485,16 @@ dataset cannot resolve).
   rather than deploying GenAI everywhere language appears.
 
 **Evidence that complicates the thesis:**
-- A meaningful minority of confirmed use cases (14%, §4) apply generative techniques to
+- A meaningful minority of disclosed use cases (14%, §4) apply generative techniques to
   structured, non-language inputs (design generation, image synthesis, guided-parameter
   personalisation) — the thesis as stated is framed around *language* tasks, and this slice of
   the dataset sits partly outside that frame, suggesting real-world GenAI adoption is not neatly
   bounded by "is the input language."
-- More than a third of confirmed use cases (36%, §4) fall outside the "classic good fit" pattern
-  entirely — either by input type, output type, or cost-of-error — yet were still confirmed as
+- More than a third of disclosed use cases (36%, §4) fall outside the "classic good fit" pattern
+  entirely — either by input type, output type, or cost-of-error — yet were still disclosed as
   live, operational deployments. If task-fit criteria were being applied strictly and
   consistently across the FTSE 100, one might expect a narrower, more homogeneous set of
-  confirmed uses; the dataset instead shows real heterogeneity, including genuine live deployment
+  disclosed uses; the dataset instead shows real heterogeneity, including genuine live deployment
   in some of the highest-stakes categories (insurance-pricing underwriting, drone command).
 - The dataset documents *what companies disclose about deployment*, not *how well matched the
   task actually is* or *whether the deployment succeeds*. A company pairing a high-stakes use
@@ -532,7 +532,7 @@ or failure that the dataset cannot support.
 | **Methodology** | §0 methodology reminder; unit of analysis; inclusion/exclusion criteria; evidence window; population/date rule |
 | **Source selection** | Company-primary-first sourcing; technology-partner case studies labelled distinctly (§6); the 13 blocked companies and why (§8, §9.2) |
 | **Coding framework** | `03_CODING_MANUAL.md` summary: is_genai test, deployment stage, evidence strength/confidence, controlled vocabularies |
-| **Definition of operational GenAI use** | The strict `confirmed_use_case_count` rule (§0); explicitly distinguish from provisional/strategic/governance (§5) |
+| **Definition of operational GenAI use** | The strict `disclosed_use_case_count` rule (§0); explicitly distinguish from provisional/strategic/governance (§5) |
 | **Results** | §1–§3 coverage and headline stats; §Table 3 use-case categorisation; Table 1/2 |
 | **Sector/use-case analysis** | §Table 4 sector comparison with explicit small-sample caveats (§9.8); §3 business-function/deployment-stage breakdown |
 | **Discussion** | §4 task-suitability analysis in full; §5 strategic-vs-operational gap; §11 thesis assessment |
@@ -548,8 +548,8 @@ or failure that the dataset cannot support.
 - `outputs/analysis/table_1_coverage.csv` — FTSE 100 research coverage/status
 - `outputs/analysis/table_2_adoption.csv` — operational GenAI adoption, both denominators
 - `outputs/analysis/table_3_use_case_categories.csv` — business function / deployment stage / orientation / user group / partner / benefit distributions
-- `outputs/analysis/table_3b_task_suitability_detail.csv` — row-by-row task-suitability classification of all 58 confirmed use cases
-- `outputs/analysis/table_4_sector_comparison.csv` — sector-level researched/confirmed/use-case/null/blocked counts (sector labels merged for the case-inconsistency noted in §1), with a small-sample flag column
+- `outputs/analysis/table_3b_task_suitability_detail.csv` — row-by-row task-suitability classification of all 58 disclosed use cases
+- `outputs/analysis/table_4_sector_comparison.csv` — sector-level researched/disclosed/use-case/null/blocked counts (sector labels merged for the case-inconsistency noted in §1), with a small-sample flag column
 - `outputs/analysis/table_5_strategic_governance_vs_operational.csv` — the six comparison-group counts
 - `outputs/analysis/table_5b_company_lists.csv` — the actual company names in the "strategic/governance but no operational" and "zero qualifying evidence" groups
 - `outputs/analysis/table_6_evidence_quality.csv` — evidence_strength/confidence/benefit_evidence/evidence_origin distributions

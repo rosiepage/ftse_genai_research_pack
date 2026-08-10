@@ -1,6 +1,6 @@
 metric,value,pct_denominator_A_all100,pct_denominator_B_87evidence
-confirmed_operational_companies,38,38.0%,43.7%
+disclosed_operational_companies,38,38.0%,43.7%
 null_result_companies,49,49.0%,56.3%
 blocked_companies,13,13.0%,n/a (excluded from denominator B)
-total_confirmed_use_cases,58,,
+total_disclosed_use_cases,58,,
 total_provisional_use_cases,63,,
