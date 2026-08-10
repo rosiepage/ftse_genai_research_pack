@@ -469,3 +469,64 @@ No interpretation below -- raw field values and verbatim source quotations only.
 | url | https://www.severntrent.com/content/dam/stw-plc/shareholder-resources/2024-reports/severn-trent-ara-2024-bookmarked-web-full-report.pdf |
 | evidence_quotation | Our colleagues now have access to Copilot, which offers the capabilities of GPT-4, with commercial data protection from Microsoft. |
 
+---
+
+## Field-support review (added after the initial sample)
+
+**Standard applied:** for each of the 20 rows, checked whether the recorded `evidence_quotation`
+text itself -- and only that text, not the fuller source document -- explicitly states or
+directly, unambiguously implies each of: `primary_business_function`, `deployment_stage`,
+`orientation`, `claimed_benefits`, `benefit_evidence`. A row counts as "clearly checks out" only
+if all five hold up against the quote alone, without needing outside context or a generous
+inferential leap. This is a strict test of the *recorded quotation*, not a claim that the
+underlying coding is wrong -- the fuller source document may well support a field this specific
+excerpt doesn't, since `evidence_quotation` is a short pull, not the full passage.
+
+**Result: 6 of 20 rows clearly check out across all five fields. 14 of 20 have at least one field
+that the recorded quotation doesn't clearly support, is vague on, or needs more surrounding
+context to judge.**
+
+### Clearly check out (6)
+
+RIO-UC-001, RTO-UC-001, BARC-UC-001, AUTO-UC-001, MKS-UC-001, AZN-UC-004C.
+
+### The single clearest individual discrepancy
+
+**REL-UC-002 (RELX, PharmaPendium AI):** coded `benefit_evidence = observed_unquantified`, but
+the quotation itself contains an explicit figure -- **"Early access users reported time savings
+of up to 66 percent per search and review session."** A 66% figure is a quantified statistic, not
+an unquantified observation. This looks like it should be `measured`, not
+`observed_unquantified`. This matters beyond this one row: `ANALYSIS_MEMO.md` §6 states only 1 of
+58 confirmed rows carries `benefit_evidence = measured` (AstraZeneca's). If this row is also
+miscoded, that headline count may be understated by at least one -- worth a full pass over all 58
+rows' `benefit_evidence` field against their quotations, not just this sample, before the report
+repeats "only 1/58."
+
+### The other 13 flagged rows
+
+| record_id | Company | Flagged field(s) | Coded value | Quote (as recorded) | Why it's flagged |
+|---|---|---|---|---|---|
+| TSCO-UC-002 | Tesco | claimed_benefits, benefit_evidence | time_saving;productivity / observed_unquantified | "Powered by GenAI, it automatically generates compliant ads in all the formats brands need, across both onsite and offsite." | Describes what the tool does, not a stated benefit or outcome -- no time/productivity language at all. |
+| GSK-UC-001 | GSK plc | claimed_benefits | productivity | "Generative AI has been implemented at over 20 sites to review historical investigation data and identify trends for improvement." | States purpose (review data, find trends), not a productivity claim. |
+| STAN-UC-001 | Standard Chartered | claimed_benefits | productivity | "Our bespoke, secure SC GPT has been rolled out to support over 70,000 employees across 41 markets." | States scale and purpose ("to support"), no benefit language. |
+| REL-UC-004 | RELX | deployment_stage | live_scaled | "Launched in 2024, Ask ICIS is ICIS' first of its kind generative AI assistant that delivers subscribers an unparalleled access to..." | "Launched" confirms live, but nothing in the quote indicates scale -- could equally be live_limited from this text alone. |
+| CNA-UC-001 | Centrica | benefit_evidence | expected | "...checks email content to ensure compliance with company policies, saving employees hundreds of hours a year." | "Saving...hundreds of hours a year" reads as an already-happening, roughly-quantified outcome, not a future expectation. |
+| HSBA-UC-001 | HSBC | orientation | mixed | "HSBC will supercharge its frontline staff and relationship managers with...an AI-powered decision assistant that is already reducing admin and client meeting prep time..." | Quote describes only internal staff use; nothing here supports a "mixed" (internal + customer-facing) orientation. |
+| BT-UC-001 | BT Group | orientation, user_group | internal / employees | "...helping to simplify processes and boost productivity for its teams **and Communications Provider customers**." | The quote itself names an external beneficiary (Communications Provider customers) alongside internal teams -- "internal"/"employees" alone doesn't capture that. |
+| SSE-UC-001 | SSE plc | claimed_benefits | service_quality;productivity | "...Available 24/7, Nero currently handles around 280 customer conversations each day." | Gives usage volume, not a stated service-quality or productivity benefit. |
+| BA-UC-002 | BAE Systems | orientation, user_group | mixed / mixed | "...able to give answers in a number of languages, so would be useful for international teams working together." | Quote describes only internal maintenance/engineering teams; nothing here supports "mixed" over a plain "internal" reading. |
+| ENT-UC-001 | Entain | benefit_evidence | observed_unquantified | "...The AI chatbot reached over 65,000 users." | This is a reach/usage number, not an observed benefit or outcome -- softer flag than the others, but still not a benefit statement. |
+| PSON-UC-001 | Pearson plc | benefit_evidence | observed_unquantified | "...deploying Claude and Claude Code...**to** accelerate development **and** enhance productivity and quality" | "To accelerate...and enhance" is purpose/intent phrasing (forward-looking), which reads closer to `expected` than a confirmed observation. |
+| SVT-UC-001 | Severn Trent | claimed_benefits, benefit_evidence | productivity / observed_unquantified | "Our colleagues now have access to Copilot, which offers the capabilities of GPT-4, with commercial data protection from Microsoft." | Quote is entirely about access and data protection -- no benefit or outcome language anywhere in it. |
+| LSEG-UC-001 | London Stock Exchange Group | claimed_benefits | productivity | "...an application that uses Gen AI and data from LSEG Workspace to produce insightful briefing reports for meetings" | Describes the product's function, not a stated productivity benefit. |
+
+### Note on a recurring pattern
+
+Several flagged rows (GSK, STAN, TSCO, SSE, SVT, LSEG) share the same shape: `claimed_benefits`
+is populated with a plausible, common-sense value (usually `productivity` or `time_saving`), but
+the specific quotation captured in this dataset describes what the tool *does*, not a benefit the
+company *stated*. That doesn't necessarily mean the coding is wrong -- the source document may
+state the benefit elsewhere in a passage that wasn't pulled into `evidence_quotation` -- but it
+means this sample cannot confirm those specific `claimed_benefits` values from the recorded
+evidence alone, only from the fuller (unreviewed-here) source document.
+
