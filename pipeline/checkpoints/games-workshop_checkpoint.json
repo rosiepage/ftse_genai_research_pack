@@ -1,0 +1,58 @@
+{
+  "slug": "games-workshop",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Games Workshop",
+      "ticker": "GAW",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T17:09:37Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T17:13:18Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T17:17:51Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 1,
+      "stage_b_hits": 2,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T17:18:27Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 0,
+      "rejected_candidates": 3,
+      "duplicate_groups": 1,
+      "passages_grouped": 0,
+      "timestamp": "2026-08-05T17:18:40Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-05T17:23:34Z"
+    }
+  }
+}

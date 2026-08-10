@@ -1,0 +1,58 @@
+{
+  "slug": "fresnillo-plc",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Fresnillo plc",
+      "ticker": "FRES",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-06T10:00:36Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-06T11:03:12Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T14:26:51Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 1,
+      "stage_b_hits": 12,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T14:27:14Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 1,
+      "rejected_candidates": 12,
+      "duplicate_groups": 0,
+      "passages_grouped": 0,
+      "timestamp": "2026-08-07T14:27:29Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 1,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T15:01:58Z"
+    }
+  }
+}

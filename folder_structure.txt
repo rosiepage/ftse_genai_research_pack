@@ -1,0 +1,23 @@
+ftse100-genai-project/
+├── CLAUDE.md
+├── 01_PROJECT_BRIEF.md
+├── 02_DOCUMENT_COLLECTION_GUIDE.md
+├── 03_CODING_MANUAL.md
+├── 04_VALIDATION_PLAN.md
+├── 05_KEYWORDS.txt
+├── ftse100_constituents_2026-06-19.csv
+├── source_manifest.csv
+├── use_case_dataset_template.csv
+├── company_summary_template.csv
+├── sources/
+│   ├── company_documents/
+│   │   ├── AZN_AstraZeneca/
+│   │   ├── HSBA_HSBC/
+│   │   └── ...
+│   ├── partner_case_studies/
+│   └── extracted_text/
+├── scripts/
+└── outputs/
+    ├── intermediate/
+    └── final/
+        └── figures/

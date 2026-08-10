@@ -1,0 +1,58 @@
+{
+  "slug": "rolls-royce-holdings",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Rolls-Royce Holdings",
+      "ticker": "RR",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-15T14:05:15Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 4,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-17T13:02:28Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 2,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-17T13:07:39Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 4,
+      "stage_a_hits": 9,
+      "stage_b_hits": 66,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-17T13:09:25Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 2,
+      "strategic_candidates": 4,
+      "governance_candidates": 4,
+      "rejected_candidates": 30,
+      "duplicate_groups": 16,
+      "passages_grouped": 35,
+      "timestamp": "2026-07-17T15:03:45Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 4,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 4,
+      "governance_rows_added": 1,
+      "rejected_rows_added": 25,
+      "timestamp": "2026-07-17T16:04:33Z"
+    }
+  }
+}

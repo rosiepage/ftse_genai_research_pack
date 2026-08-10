@@ -1,0 +1,225 @@
+severity,company,check_category,record_id,file,message
+information,AstraZeneca,identifier,,source_manifest.csv,"Non-sequential numbering for AZN-*: missing number(s) [7] between 001 and 010 (may be an intentional exclusion, e.g. AZN-007)."
+warning,AstraZeneca,source_integrity,AZN-001,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_annual_report_FY2025.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-002,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_annual_report_FY2024.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-003,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_sustainability_report_2025.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-003,source_manifest.csv,Source 'AZN-003' has no promoted finding referencing it in any of the four findings datasets.
+warning,AstraZeneca,source_integrity,AZN-004,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_webpage_generative-ai-data-science.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-005,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_press-release_upskilling-generative-ai.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-006,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_results-presentation_fy2025.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-006,source_manifest.csv,Source 'AZN-006' has no promoted finding referencing it in any of the four findings datasets.
+warning,AstraZeneca,source_integrity,AZN-008,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_partner_aws_case-study_development-assistant.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-009,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_press-release_cspc-collaboration.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-009,source_manifest.csv,Source 'AZN-009' has no promoted finding referencing it in any of the four findings datasets.
+warning,AstraZeneca,source_integrity,AZN-010,source_manifest.csv,Legacy '.pdf.pdf' filename 'AZN_company_regulatory-filing_form-20f-fy2025.pdf.pdf' -- retained as a warning only; already referenced by existing promoted data.
+warning,AstraZeneca,source_integrity,AZN-010,source_manifest.csv,Source 'AZN-010' has no promoted finding referencing it in any of the four findings datasets.
+information,AstraZeneca,unresolved_review,,(no staging files),AstraZeneca has no staging files (predates the 06/07 staging pipeline) -- unresolved-review audit checked review_status on use_case_dataset_template.csv rows instead.
+warning,AstraZeneca,unresolved_review,AZN-UC-004A;AZN-UC-004B;AZN-UC-004E,use_case_dataset_template.csv,"3 row(s) remain review_status=not_reviewed: AZN-UC-004A, AZN-UC-004B, AZN-UC-004E."
+information,AstraZeneca,company_summary,,company_summary_template.csv,"manual_review_status: stored='review_complete' recomputed='pending_review' -- interpretive field, reported not forced."
+warning,Tesco,source_integrity,TSCO-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Tesco,source_integrity,TSCO-002,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+information,Tesco,controlled_value,TSCO-UC-001,use_case_dataset_template.csv,"evidence_strength=1_weak with review_status=reviewed_confirmed/corrected -- legitimate (a reviewed row may carry 1_weak), but must not enter the confirmed count (verified separately)."
+warning,Tesco,unresolved_review,TSCO-STR-007,tesco_strategic_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,BT Group,source_integrity,BT-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,BT Group,source_integrity,BT-002,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,BT Group,source_integrity,BT-003,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,BT Group,source_integrity,BT-006,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,BT Group,unresolved_review,BT-OP-005,bt-group_operational_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,BT Group,unresolved_review,BT-REJ-032,bt-group_rejected_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,Rolls-Royce Holdings,source_integrity,RR-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Rolls-Royce Holdings,source_integrity,RR-002,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Rolls-Royce Holdings,unresolved_review,RR-OP-002,rolls-royce-holdings_operational_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,Rolls-Royce Holdings,unresolved_review,RR-STR-003,rolls-royce-holdings_strategic_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,Rolls-Royce Holdings,unresolved_review,RR-REJ-021,rolls-royce-holdings_rejected_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,Rolls-Royce Holdings,unresolved_review,RR-REJ-030,rolls-royce-holdings_rejected_candidates_staging.csv,"reviewer_decision=needs_more_evidence -- not promoted, requires further evidence before any decision."
+warning,Experian,source_integrity,EXPN-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Experian,source_integrity,EXPN-001,source_manifest.csv,Source 'EXPN-001' has no promoted finding referencing it in any of the four findings datasets.
+warning,Experian,unresolved_review,EXPN-STR-001,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-002,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-003,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-004,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-005,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-006,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-007,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-008,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-009,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-010,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-STR-011,experian_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-001,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-002,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-003,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-004,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-005,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-006,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-007,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-008,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-009,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-010,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-011,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-GOV-012,experian_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-001,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-002,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-003,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-004,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-005,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-006,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-007,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-008,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-009,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-010,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-011,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-012,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-013,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-014,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-015,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-016,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-017,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-018,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-019,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-020,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-021,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-022,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-023,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-024,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-025,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-026,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-027,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-028,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-029,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-030,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-031,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-032,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-033,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-034,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-035,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-036,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-037,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-038,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-039,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-040,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-041,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-042,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-043,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-044,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-045,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-046,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-047,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-048,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-049,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-050,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-051,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-052,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-053,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-054,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-055,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-056,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-057,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-058,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-059,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-060,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-061,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-062,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-063,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Experian,unresolved_review,EXPN-REJ-067,experian_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+information,Experian,company_summary,,company_summary_template.csv,"manual_review_status: stored='review_complete' recomputed='pending_review' -- interpretive field, reported not forced."
+warning,Rio Tinto,source_integrity,RIO-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Rio Tinto,source_integrity,RIO-002,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Rio Tinto,source_integrity,RIO-002,source_manifest.csv,Source 'RIO-002' has no promoted finding referencing it in any of the four findings datasets.
+warning,Rio Tinto,unresolved_review,RIO-REJ-001,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-002,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-003,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-005,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-006,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-007,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-008,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-009,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-010,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-011,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-012,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-013,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Rio Tinto,unresolved_review,RIO-REJ-014,rio-tinto_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+information,Rio Tinto,company_summary,,company_summary_template.csv,"manual_review_status: stored='review_complete' recomputed='pending_review' -- interpretive field, reported not forced."
+warning,Admiral Group,unresolved_review,ADM-REJ-001,admiral-group_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+information,Admiral Group,company_summary,,company_summary_template.csv,"manual_review_status: stored='review_complete' recomputed='pending_review' -- interpretive field, reported not forced."
+warning,Informa,source_integrity,INF-001,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Informa,source_integrity,INF-002,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Informa,source_integrity,INF-002,source_manifest.csv,Source 'INF-002' has no promoted finding referencing it in any of the four findings datasets.
+warning,Informa,source_integrity,INF-003,source_manifest.csv,publication_date is blank (acceptable where the source did not confirm an exact date; do not infer one).
+warning,Informa,source_integrity,INF-003,source_manifest.csv,Source 'INF-003' has no promoted finding referencing it in any of the four findings datasets.
+warning,Informa,unresolved_review,INF-STR-001,informa_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-STR-002,informa_strategic_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-001,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-002,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-003,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-004,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-005,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-006,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-008,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-009,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-010,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-011,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-GOV-012,informa_governance_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-001,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-002,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-003,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-004,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-005,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-006,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-007,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-008,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-009,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-010,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-011,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-012,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-013,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-014,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-015,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-016,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-017,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-018,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-019,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-020,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-021,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-022,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-023,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-024,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-025,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-026,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-027,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-028,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-029,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-030,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-031,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-032,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-033,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-034,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-035,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-036,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-037,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-038,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-039,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-040,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-041,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-042,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-043,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-044,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-045,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-046,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-047,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-048,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-049,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-050,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-051,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-052,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-053,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-054,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-055,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-056,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-057,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-058,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-059,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-060,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-061,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-062,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+warning,Informa,unresolved_review,INF-REJ-063,informa_rejected_candidates_staging.csv,reviewer_decision is blank -- never reviewed.
+information,Informa,company_summary,,company_summary_template.csv,"manual_review_status: stored='review_complete' recomputed='pending_review' -- interpretive field, reported not forced."

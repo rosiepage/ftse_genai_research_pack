@@ -1,0 +1,58 @@
+{
+  "slug": "bt-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "BT Group",
+      "ticker": "BT.A",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-15T14:05:15Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 6,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-17T13:01:47Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 3,
+      "extracted_html": 3,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-17T13:05:35Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 6,
+      "stage_a_hits": 36,
+      "stage_b_hits": 111,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-17T13:09:14Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 5,
+      "strategic_candidates": 6,
+      "governance_candidates": 13,
+      "rejected_candidates": 52,
+      "duplicate_groups": 30,
+      "passages_grouped": 71,
+      "timestamp": "2026-07-17T15:03:38Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 6,
+      "operational_rows_added": 4,
+      "strategic_rows_added": 2,
+      "governance_rows_added": 9,
+      "rejected_rows_added": 48,
+      "timestamp": "2026-07-17T16:03:58Z"
+    }
+  }
+}

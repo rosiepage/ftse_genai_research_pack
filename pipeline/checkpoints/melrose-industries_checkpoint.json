@@ -1,0 +1,58 @@
+{
+  "slug": "melrose-industries",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Melrose Industries",
+      "ticker": "MRO",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-06T10:00:35Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 1,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 1,
+      "timestamp": "2026-08-06T11:02:24Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 1,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T14:15:39Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 1,
+      "stage_a_hits": 0,
+      "stage_b_hits": 4,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T14:27:05Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 0,
+      "rejected_candidates": 3,
+      "duplicate_groups": 1,
+      "passages_grouped": 1,
+      "timestamp": "2026-08-07T14:27:26Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 1,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T15:01:24Z"
+    }
+  }
+}

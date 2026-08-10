@@ -1,0 +1,13 @@
+{
+  "slug": "unilever",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Unilever",
+      "ticker": "ULVR",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:01:43Z"
+    }
+  }
+}

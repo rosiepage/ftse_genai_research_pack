@@ -1,0 +1,58 @@
+{
+  "slug": "hiscox",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Hiscox",
+      "ticker": "HSX",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T17:09:37Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 4,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T17:13:43Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 1,
+      "extracted_html": 3,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T17:17:22Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 4,
+      "stage_a_hits": 31,
+      "stage_b_hits": 59,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T17:18:25Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 3,
+      "governance_candidates": 5,
+      "rejected_candidates": 34,
+      "duplicate_groups": 17,
+      "passages_grouped": 48,
+      "timestamp": "2026-08-05T17:18:40Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 4,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 3,
+      "governance_rows_added": 5,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-05T17:23:33Z"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "compass-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Compass Group",
+      "ticker": "CPG",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-04T13:20:46Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "timestamp": "2026-08-04T13:26:16Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 0,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 2,
+      "failed": 0,
+      "timestamp": "2026-08-04T13:30:55Z"
+    }
+  }
+}

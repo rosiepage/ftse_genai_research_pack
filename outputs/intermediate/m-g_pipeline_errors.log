@@ -1,0 +1,6 @@
+2026-08-05T16:58:22Z | 04_extract_text | MNG_company_annual_report_current_fy2025_2026-03.pdf: pypdf could not open/read the file: cryptography>=3.1 is required for AES algorithm
+2026-08-05T16:58:22Z | 04_extract_text | MNG_company_annual_report_current_fy2025_2026-03.pdf: pypdf produced no text and PyMuPDF is not installed (not installing it automatically).
+2026-08-05T16:58:22Z | 04_extract_text | MNG_company_annual_report_current_fy2025_2026-03.pdf: extraction produced 0/0 non-empty pages (engine=None)
+2026-08-05T16:58:23Z | 04_extract_text | MNG_company_annual_report_previous_fy2024_2025-03.pdf: pypdf could not open/read the file: cryptography>=3.1 is required for AES algorithm
+2026-08-05T16:58:23Z | 04_extract_text | MNG_company_annual_report_previous_fy2024_2025-03.pdf: pypdf produced no text and PyMuPDF is not installed (not installing it automatically).
+2026-08-05T16:58:23Z | 04_extract_text | MNG_company_annual_report_previous_fy2024_2025-03.pdf: extraction produced 0/0 non-empty pages (engine=None)

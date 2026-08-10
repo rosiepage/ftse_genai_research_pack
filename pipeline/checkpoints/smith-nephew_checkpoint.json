@@ -1,0 +1,65 @@
+{
+  "slug": "smith-nephew",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Smith & Nephew",
+      "ticker": "SN",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T15:14:47Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 2,
+      "error_count": 0,
+      "warning_count": 0,
+      "timestamp": "2026-08-05T15:18:53Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T15:19:40Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 0,
+      "extracted_html": 2,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T15:21:21Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 0,
+      "stage_b_hits": 7,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T15:34:39Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 0,
+      "rejected_candidates": 1,
+      "duplicate_groups": 1,
+      "passages_grouped": 6,
+      "timestamp": "2026-08-05T15:35:14Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-05T15:55:06Z"
+    }
+  }
+}

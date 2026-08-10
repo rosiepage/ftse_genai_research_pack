@@ -1,0 +1,13 @@
+dimension,value,count,pct
+evidence_strength_all_63_rows,2_moderate,34,54.0%
+evidence_strength_all_63_rows,1_weak,2,3.2%
+evidence_strength_all_63_rows,3_strong,27,42.9%
+evidence_strength_58_confirmed,2_moderate,31,53.4%
+evidence_strength_58_confirmed,3_strong,27,46.6%
+confidence_58_confirmed,medium,28,48.3%
+confidence_58_confirmed,high,30,51.7%
+evidence_origin_58_confirmed,company_primary,49,84.5%
+evidence_origin_58_confirmed,technology_partner,9,15.5%
+benefit_evidence_58_confirmed,measured,1,1.7%
+benefit_evidence_58_confirmed,observed_unquantified,25,43.1%
+benefit_evidence_58_confirmed,expected,32,55.2%

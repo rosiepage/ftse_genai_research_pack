@@ -1,0 +1,22 @@
+{
+  "slug": "burberry-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Burberry Group",
+      "ticker": "BRBY",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T16:36:45Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 0,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 2,
+      "failed": 0,
+      "timestamp": "2026-08-05T16:54:37Z"
+    }
+  }
+}

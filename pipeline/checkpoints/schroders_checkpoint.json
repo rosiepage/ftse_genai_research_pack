@@ -1,0 +1,65 @@
+{
+  "slug": "schroders",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Schroders",
+      "ticker": "SDR",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T11:26:45Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 3,
+      "error_count": 0,
+      "warning_count": 0,
+      "timestamp": "2026-08-05T12:35:58Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T12:36:25Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 0,
+      "extracted_html": 3,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T13:04:16Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 3,
+      "stage_b_hits": 5,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T13:05:27Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 0,
+      "rejected_candidates": 2,
+      "duplicate_groups": 1,
+      "passages_grouped": 6,
+      "timestamp": "2026-08-05T13:07:18Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-05T13:28:22Z"
+    }
+  }
+}

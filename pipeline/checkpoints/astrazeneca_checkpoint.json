@@ -1,0 +1,14 @@
+{
+  "slug": "astrazeneca",
+  "stages": {
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 8,
+      "extracted_html": 0,
+      "skipped_existing": 1,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-17T16:29:17Z"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Schroders,SDR-REJ-002,rejected_candidates_staging,same_source_consolidation,not_applicable,7 passages on the same page (not_applicable) of SDR_company_press_release_n-a_2024-07.html describe the same vague general ai reference theme and were consolidated into one row.,yes,,

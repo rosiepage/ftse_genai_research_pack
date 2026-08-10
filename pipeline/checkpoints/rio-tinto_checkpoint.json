@@ -1,0 +1,58 @@
+{
+  "slug": "rio-tinto",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Rio Tinto",
+      "ticker": "RIO",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-17T16:35:51Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-18T12:09:49Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 1,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-18T12:11:27Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 2,
+      "stage_b_hits": 25,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-18T12:12:45Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 0,
+      "rejected_candidates": 15,
+      "duplicate_groups": 4,
+      "passages_grouped": 12,
+      "timestamp": "2026-07-18T12:13:08Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 1,
+      "timestamp": "2026-07-20T20:30:52Z"
+    }
+  }
+}

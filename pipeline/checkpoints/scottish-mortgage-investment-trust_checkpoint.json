@@ -1,0 +1,58 @@
+{
+  "slug": "scottish-mortgage-investment-trust",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Scottish Mortgage Investment Trust",
+      "ticker": "SMT",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-07T21:29:29Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-07T21:36:42Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T21:39:21Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 9,
+      "stage_b_hits": 97,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T21:41:21Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 10,
+      "governance_candidates": 0,
+      "rejected_candidates": 40,
+      "duplicate_groups": 18,
+      "passages_grouped": 56,
+      "timestamp": "2026-08-07T21:41:44Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T22:40:32Z"
+    }
+  }
+}

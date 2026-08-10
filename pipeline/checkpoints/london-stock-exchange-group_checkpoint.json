@@ -1,0 +1,65 @@
+{
+  "slug": "london-stock-exchange-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "London Stock Exchange Group",
+      "ticker": "LSEG",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-21T15:15:52Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 5,
+      "error_count": 0,
+      "warning_count": 1,
+      "timestamp": "2026-08-04T11:51:10Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 5,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-04T12:29:48Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 3,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-04T12:45:38Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 5,
+      "stage_a_hits": 36,
+      "stage_b_hits": 156,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-04T12:47:34Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 14,
+      "governance_candidates": 7,
+      "rejected_candidates": 67,
+      "duplicate_groups": 40,
+      "passages_grouped": 104,
+      "timestamp": "2026-08-04T12:48:22Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 5,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 16,
+      "governance_rows_added": 7,
+      "rejected_rows_added": 4,
+      "timestamp": "2026-08-04T13:07:06Z"
+    }
+  }
+}

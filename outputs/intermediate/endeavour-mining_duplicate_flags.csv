@@ -1,0 +1,2 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Endeavour Mining,EDV-REJ-003;EDV-REJ-005,rejected_candidates_staging;rejected_candidates_staging,repeated_cross_year_disclosure,0.66,Passages in EDV_company_annual_report_current_fy2025_2026-03-05.pdf and EDV_company_annual_report_previous_fy2024_2025-03-06.pdf are textually very similar (difflib ratio 0.66).,yes,,

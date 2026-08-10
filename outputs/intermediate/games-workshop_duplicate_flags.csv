@@ -1,0 +1,2 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Games Workshop,GAW-REJ-002;GAW-REJ-003,rejected_candidates_staging;rejected_candidates_staging,repeated_cross_year_disclosure,0.96,Passages in GAW_company_annual_report_current_fy2024-25_2025-07-29.pdf and GAW_company_annual_report_previous_fy2023-24_2024-07.pdf are textually very similar (difflib ratio 0.96).,yes,,

@@ -1,0 +1,58 @@
+{
+  "slug": "rentokil-initial",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Rentokil Initial",
+      "ticker": "RTO",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T16:36:47Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T16:55:46Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T16:59:31Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 8,
+      "stage_b_hits": 60,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T17:00:44Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 1,
+      "governance_candidates": 3,
+      "rejected_candidates": 36,
+      "duplicate_groups": 13,
+      "passages_grouped": 28,
+      "timestamp": "2026-08-05T17:00:55Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 2,
+      "governance_rows_added": 3,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-05T17:04:11Z"
+    }
+  }
+}

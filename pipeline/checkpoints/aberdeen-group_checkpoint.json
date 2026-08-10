@@ -1,0 +1,58 @@
+{
+  "slug": "aberdeen-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Aberdeen Group",
+      "ticker": "ABDN",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-07T15:06:11Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-07T15:09:30Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T15:11:51Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 1,
+      "stage_b_hits": 30,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T15:13:32Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 1,
+      "rejected_candidates": 29,
+      "duplicate_groups": 2,
+      "passages_grouped": 1,
+      "timestamp": "2026-08-07T15:13:47Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 1,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T15:17:55Z"
+    }
+  }
+}

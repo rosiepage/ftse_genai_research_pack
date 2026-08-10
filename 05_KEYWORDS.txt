@@ -1,0 +1,30 @@
+generative AI
+GenAI
+gen AI
+large language model
+large-language model
+LLM
+foundation model
+copilot
+Microsoft 365 Copilot
+GitHub Copilot
+ChatGPT
+OpenAI
+Claude
+Anthropic
+Gemini
+Google Vertex AI
+Azure OpenAI
+Amazon Bedrock
+Bedrock
+text generation
+content generation
+code generation
+synthetic content
+retrieval augmented generation
+retrieval-augmented generation
+RAG
+prompt engineering
+AI assistant
+AI agent
+agentic AI

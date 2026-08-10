@@ -1,0 +1,7 @@
+group,company_count,pct_of_87_evidence_based
+confirmed_operational_use_case,38,43.7%
+strategic_finding_present,33,37.9%
+governance_finding_present,50,57.5%
+any_ai_evidence_strategic_gov_or_operational,65,74.7%
+strategic_or_governance_but_NO_confirmed_operational,27,31.0%
+zero_qualifying_evidence_of_any_kind,22,25.3%

@@ -1,0 +1,3 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Investec,INVP-REJ-001,rejected_candidates_staging,webpage_boilerplate,not_applicable,6 webpage-boilerplate passages on the same page/section of INVP_partner_partner_case_study_n-a.html consolidated into one rejected row.,yes,,
+DUPG-002,Investec,INVP-REJ-013,rejected_candidates_staging,same_source_consolidation,not_applicable,27 passages on the same page (not_applicable) of INVP_partner_partner_case_study_n-a.html describe the same vague general ai reference theme and were consolidated into one row.,yes,,

@@ -1,0 +1,65 @@
+{
+  "slug": "barclays",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Barclays",
+      "ticker": "BARC",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-04T13:20:45Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "timestamp": "2026-08-04T13:26:16Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-04T13:28:07Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-04T13:40:05Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 15,
+      "stage_b_hits": 183,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-04T13:47:05Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 2,
+      "governance_candidates": 11,
+      "rejected_candidates": 83,
+      "duplicate_groups": 27,
+      "passages_grouped": 102,
+      "timestamp": "2026-08-04T13:49:54Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 2,
+      "governance_rows_added": 11,
+      "rejected_rows_added": 3,
+      "timestamp": "2026-08-04T14:29:56Z"
+    }
+  }
+}

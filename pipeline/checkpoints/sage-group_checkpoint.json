@@ -1,0 +1,13 @@
+{
+  "slug": "sage-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Sage Group",
+      "ticker": "SGE",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:01:45Z"
+    }
+  }
+}

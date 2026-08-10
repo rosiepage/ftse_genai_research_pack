@@ -1,0 +1,212 @@
+staging_id,company,ticker,candidate_title,local_filename,source_id,document_category,evidence_origin,page_or_section,matched_keywords,screening_stages,supporting_passage_count,supporting_context,possible_extraction_artifact,possible_webpage_boilerplate,provisional_is_genai,provisional_primary_business_function,provisional_secondary_business_function,provisional_user_group,provisional_orientation,provisional_deployment_stage,provisional_claimed_benefits,provisional_quantified_metric,provisional_risk_or_limitation,provisional_destination_ambiguity,duplicate_group_id,suggested_destination,reviewer_decision,reviewer_notes
+BT-OP-001,BT Group,BT.A,"BT Group's Digital Unit launches 'GenAI Gateway' platform, powered by AWS, accelerating the company's safe adoption of generative AI at scale",BT.A_company_press_release_bt-group-s-digital-unit-launches-genai-gateway-platform-powe_2024-09-24.html,,press_release,company_primary,not_applicable,AI;GenAI;generative AI,A;B,3,"Openreach is summarising engineering notes on Ethernet and full fibre jobs, helping to simplify processes and boost productivity for its teams and Communications Provider customers. A second use case, supporting contract analysis for the Group’s Business, legal and procurement teams, is also live.
+
+Fabio Cerone, GM EMEA Telco at AWS, said: “The BT Group GenAI Gateway is showcasing how enterprises can effectively deploy generative AI at scale and speed. It’s been a brilliant, pioneering opportunity to collaborate and work backwards from the customer to provide a way to accelerate deployment of generative AI use cases into production with embedded security and compliance. The GenAI Gateway will trigger the flywheel effect in the adoption of generative AI, delivering quicker results for BT Group and its customers.”
+
+Deepika Adusumilli, Managing Director, Data & AI, BT Group’s Digital Unit said: “AI is helping us reimagine the future of our company. We believe that where our data is a constant, we need flexibility with our LLMs. GenAI Gateway allows us to tap into this powerful new set of technologies at scale, in a way that is safe, responsible, flexible and scalable, delivering the ambition we ha ||| Group policies and relevant regulation. Guardrails are built into the GenAI Gateway, limiting the risk of jailbreaks or toxic interactions, filtering out queries that go beyond the remit of specific applications – ensuring both performance and ethical guardrails are built-in by design.
+
+Gen AI Gateway is one of the several key enablers we are deploying to enable BT Group as an AI-enabled enterprise, and we will also use our “data fabric” data management platform to help enforce governing policies for how data can be used, as well as to manage access control and data sovereignty restrictions.
+
+GenAI Gateway is live today with the first beta use cases. A trial in Openreach is summarising engineering notes on Ethernet and full fibre jobs, helping to simplify processes and boost productivity for its teams and Communications Provider customers. A second use case, supporting contract analysis for the Group’s Business, legal and procurement teams, is also live.
+
+Fabio Cerone, GM EMEA Telco at AWS, said: “The BT Group GenAI Gateway is showcasing how enterprises can effectively deploy generative AI at scale and speed. It’s been a brilliant, pioneering opportunity to collaborate and work backwar ||| rise search, as well as use of multiple corporate data sources. Central privacy controls include separate tenants for each use case, the use of Personal Identifiable Information filters, the location of the data within the UK and the isolation of trained models from each other, protecting data in line with Group policies and relevant regulation. Guardrails are built into the GenAI Gateway, limiting the risk of jailbreaks or toxic interactions, filtering out queries that go beyond the remit of specific applications – ensuring both performance and ethical guardrails are built-in by design.
+
+Gen AI Gateway is one of the several key enablers we are deploying to enable BT Group as an AI-enabled enterprise, and we will also use our “data fabric” data management platform to help enforce governing policies for how data can be used, as well as to manage access control and data sovereignty restrictions.
+
+GenAI Gateway is live today with the first beta use cases. A trial in Openreach is summarising engineering notes on Ethernet and full fibre jobs, helping to simplify processes and boost productivity for its teams and Communications Provider customers. A second use case, supporting contract an",no,no,yes,operations_supply_chain,knowledge_document_work,employees,internal,pilot,time_saving;productivity,not_applicable,unclear,none,DUPG-003,operational,accept,Qualifying GenAI operational use case. Official BT source explicitly describes a GenAI Gateway trial that summarises Openreach engineering notes. Keep deployment stage as pilot. Treat separately from contract analysis because it is a distinct task and user group.
+BT-OP-002,BT Group,BT.A,"BT Group's Digital Unit launches 'GenAI Gateway' platform, powered by AWS, accelerating the company's safe adoption of generative AI at scale",BT.A_company_press_release_bt-group-s-digital-unit-launches-genai-gateway-platform-powe_2024-09-24.html,,press_release,company_primary,not_applicable,GenAI;generative AI,A,2,"Openreach is summarising engineering notes on Ethernet and full fibre jobs, helping to simplify processes and boost productivity for its teams and Communications Provider customers. A second use case, supporting contract analysis for the Group’s Business, legal and procurement teams, is also live.
+
+Fabio Cerone, GM EMEA Telco at AWS, said: “The BT Group GenAI Gateway is showcasing how enterprises can effectively deploy generative AI at scale and speed. It’s been a brilliant, pioneering opportunity to collaborate and work backwards from the customer to provide a way to accelerate deployment of generative AI use cases into production with embedded security and compliance. The GenAI Gateway will trigger the flywheel effect in the adoption of generative AI, delivering quicker results for BT Group and its customers.”
+
+Deepika Adusumilli, Managing Director, Data & AI, BT Group’s Digital Unit said: “AI is helping us reimagine the future of our company. We believe that where our data is a constant, we need flexibility with our LLMs. GenAI Gateway allows us to tap into this powerful new set of technologies at scale, in a way that is safe, responsible, flexible and scalable, delivering the ambition we ha ||| Group policies and relevant regulation. Guardrails are built into the GenAI Gateway, limiting the risk of jailbreaks or toxic interactions, filtering out queries that go beyond the remit of specific applications – ensuring both performance and ethical guardrails are built-in by design.
+
+Gen AI Gateway is one of the several key enablers we are deploying to enable BT Group as an AI-enabled enterprise, and we will also use our “data fabric” data management platform to help enforce governing policies for how data can be used, as well as to manage access control and data sovereignty restrictions.
+
+GenAI Gateway is live today with the first beta use cases. A trial in Openreach is summarising engineering notes on Ethernet and full fibre jobs, helping to simplify processes and boost productivity for its teams and Communications Provider customers. A second use case, supporting contract analysis for the Group’s Business, legal and procurement teams, is also live.
+
+Fabio Cerone, GM EMEA Telco at AWS, said: “The BT Group GenAI Gateway is showcasing how enterprises can effectively deploy generative AI at scale and speed. It’s been a brilliant, pioneering opportunity to collaborate and work backwar",no,no,yes,risk_legal_compliance,finance_administration,employees,internal,live_limited,time_saving,not_applicable,unclear,none,DUPG-004,operational,accept,"Qualifying GenAI operational use case. Official BT source describes contract analysis for Business, legal and procurement teams. Keep separate from engineering-note summarisation. Retain current deployment-stage wording unless the evidence clearly supports a correction."
+BT-OP-003,BT Group,BT.A,BT Group leans on AI to transform customer service experience,BT.A_company_press_release_bt-group-leans-on-ai-to-transform-customer-service-experienc_2024-12-12.html,,press_release,company_primary,not_applicable,AI;GenAI;generative AI,A;B,10,"rmation to customer service guides London, 12th December 2024 – BT Group is transforming customer support through the integration of advanced AI and generative AI technologies, in collaboration with Sprinklr. The refreshed customer contact platform significantly enhances the EE and BT customer experience throug ||| nhances the EE and BT customer experience through conversational AI, and enhances support processes for the Group’s customer service guides across its Business, Consumer and internal contact channels.
+
+BT Group has integrated Sprinklr's unified customer experience platform, meaning when a customer is seeking support, the platform can draw on BT Group’s data to provide a personalised, accurate response. The customer contact platform, which powers EE’s virtual assistant Aimee, also provides the messaging capability for real-time online chat with customers.
+
+The platform enables BT Group to use generative AI to support various customer experiences, for sales and support for both EE and BT customers. For example, the Gen AI-enhanced experience within Aimee which helps customers prepare for international travel has halved the need for online chat/messaging support, thanks to its ability to understand and respond to customer needs. This keeps guides free for more complex asks, and helps customers get what they need, faster.
+
+Another place it is making a difference is in billing support, where generative AI provides detailed explanations of billing charges, enhancing transparency and customer satisf ||| roup has implemented key ethical guardrails to ensure robust data privacy and security measures. AI capabilities are hosted on a private cloud instance, ensuring compliance with data and privacy regulations, and data policies are set by BT Group’s internal data management platform, Data Fabric. This allows BT Group to maintain control over its data while benefitting from Sprinklr's AI capabilities. Working with Sprinklr has also enabled BT Group to put in safeguards to monitor for attempts to get the AI to misbehave.
+
+BT Group remains agnostic about which Large Language Model (LLM) it uses in generative AI, continuing to draw on different LLMs. The architecture in the customer contact platform allows BT Group to select the optimal LLM for each use case, and will integrate with BT Group’s new GenAI Gateway in the future.
+
+Harry Singh, MD of Consumer Digital at BT Group, commented: ""The collaboration with Sprinklr marks a significant step forward in BT Group's commitment to using cutting-edge technology to deliver exceptional customer experiences. With our customer contact platform, we have unlocked powerful AI-enhanced capabilities for our customer service, boosting satisfaction and creating ex ||| ons, and data policies are set by BT Group’s internal data management platform, Data Fabric. This allows BT Group to maintain control over its data while benefitting from Sprinklr's AI capabilities. Working with Sprinklr has also enabled BT Group to put in safeguards to monitor for attempts to get the AI to misbehave.
+
+BT Group remains agnostic about which Large Language Model (LLM) it uses in generative AI, continuing to draw on different LLMs. The architecture in the customer contact platform allows BT Group to select the optimal LLM for each use case, and will integrate with BT Group’s new GenAI Gateway in the future.
+
+Harry Singh, MD of Consumer Digital at BT Group, commented: ""The collaboration with Sprinklr marks a significant step forward in BT Group's commitment to using cutting-edge technology to deliver exceptional customer experiences. With our customer contact platform, we have unlocked powerful AI-enhanced capabilities for our customer service, boosting satisfaction and creating exciting new opportunities for customer experience.""
+
+Sprinklr President and CEO Rory Read, added: “We’re delighted to be working alongside the iconic brands within BT Group, at the forefront of in ||| uides to focus on more complex issues Sprinklr’s capabilities will be re-used across the Group, not just for EE BT Group plans to expand its use of AI to provide real time support and information to customer service guides London, 12th December 2024 – BT Group is transforming customer support throu ||| es on several types of customer journey now approaching 50%, freeing time for guides to focus on more complex issues
+
+Sprinklr’s capabilities will be re-used across the Group, not just for EE
+
+BT Group plans to expand its use of AI to provide real time support and information to customer service guides
+
+London, 12th December 2024 – BT Group is transforming customer support through the integration of advanced AI and generative AI technologies, in collaboration with Sprinklr. The refreshed customer contact platform significantly enhances the EE and BT customer experience through conversational AI, and enhances support processes for the Group’s customer service guides across its Business, Consumer and internal contact channels.
+
+BT Group has integrated Sprinklr's unified customer experience platform, meaning when a customer is seeking support, the platform can draw on BT Group’s data to provide a personalised, accurate response. The customer contact platform, which powers EE’s virtual assistant Aimee, also provides the messaging capability for real-time online chat with customers.
+
+The platform enables BT Group to use generative AI to support various customer experiences, for sales an ||| tions per week are now handled through Aimee compared to ~30,000 per week just two years ago. This frees time for guides to help customers with more complex issues and deliver an even more personal experience.
+
+BT Group has implemented key ethical guardrails to ensure robust data privacy and security measures. AI capabilities are hosted on a private cloud instance, ensuring compliance with data and privacy regulations, and data policies are set by BT Group’s internal data management platform, Data Fabric. This allows BT Group to maintain control over its data while benefitting from Sprinklr's AI capabilities. Working with Sprinklr has also enabled BT Group to put in safeguards to monitor for attempts to get the AI to misbehave.
+
+BT Group remains agnostic about which Large Language Model (LLM) it uses in generative AI, continuing to draw on different LLMs. The architecture in the customer contact platform allows BT Group to select the optimal LLM for each use case, and will integrate with BT Group’s new GenAI Gateway in the future.
+
+Harry Singh, MD of Consumer Digital at BT Group, commented: ""The collaboration with Sprinklr marks a significant step forward in BT Group's commitment to ||| BT Group remains agnostic about which Large Language Model (LLM) it uses in generative AI, continuing to draw on different LLMs. The architecture in the customer contact platform allows BT Group to select the optimal LLM for each use case, and will integrate with BT Group’s new GenAI Gateway in the future.
+
+Harry Singh, MD of Consumer Digital at BT Group, commented: ""The collaboration with Sprinklr marks a significant step forward in BT Group's commitment to using cutting-edge technology to deliver exceptional customer experiences. With our customer contact platform, we have unlocked powerful AI-enhanced capabilities for our customer service, boosting satisfaction and creating exciting new opportunities for customer experience.""
+
+Sprinklr President and CEO Rory Read, added: “We’re delighted to be working alongside the iconic brands within BT Group, at the forefront of innovative customer engagement through effective AI. AI has huge potential to enhance and elevate customer experiences, and it’s been fantastic to help BT Group achieve such brilliant results, so quickly.”
+
+About Sprinklr
+
+Sprinklr is a leading enterprise software company for all customer-facing functions. With advance ||| nsumer Digital at BT Group, commented: ""The collaboration with Sprinklr marks a significant step forward in BT Group's commitment to using cutting-edge technology to deliver exceptional customer experiences. With our customer contact platform, we have unlocked powerful AI-enhanced capabilities for our customer service, boosting satisfaction and creating exciting new opportunities for customer experience.""
+
+Sprinklr President and CEO Rory Read, added: “We’re delighted to be working alongside the iconic brands within BT Group, at the forefront of innovative customer engagement through effective AI. AI has huge potential to enhance and elevate customer experiences, and it’s been fantastic to help BT Group achieve such brilliant results, so quickly.”
+
+About Sprinklr
+
+Sprinklr is a leading enterprise software company for all customer-facing functions. With advanced AI, Sprinklr's unified customer experience management (Unified-CXM) platform helps companies deliver human experiences to every customer, every time, across any modern channel. Headquartered in New York City with employees around the world, Sprinklr works with more than 1,800 valuable enterprises — global brands like Microsoft, ||| h brilliant results, so quickly.” About Sprinklr Sprinklr is a leading enterprise software company for all customer-facing functions. With advanced AI, Sprinklr's unified customer experience management (Unified-CXM) platform helps companies deliver human experiences to every customer, every time, ac",no,no,yes,customer_service,unclear,customers,customer_facing,live_scaled,service_quality;time_saving,not_applicable,yes,none,DUPG-006,operational,accept,Qualifying GenAI customer-service use case. Official BT source explicitly states generative AI is used to support sales and service experiences for BT and EE customers. Keep as one consolidated customer-service candidate. Retain any quantified scale evidence already present.
+BT-OP-004,BT Group,BT.A,Writing and Maintaining 2 Million Lines a Year Using Amazon Q Developer with BT Group,BT.A_partner_partner_case_study_writing-and-maintaining-2-million-lines-a-year-using-amazon.html,,partner_case_study,technology_partner,not_applicable,AI;generative AI,A;B,10,"nited Kingdom but also creates software. “It’s easy to look at our company and assume that all we do is phones and broadband,” says Joost Noppen, chief researcher for software at BT Group. “But software permeates the entire company. All our products are driven by software or complemented by software services.”
+
+As software becomes more critical at BT Group, the company must maintain good software engineering practices and workflows. To that end, BT Group looked for artificial intelligence (AI) tooling from Amazon Web Services (AWS). The company implemented Amazon Q Developer—the most capable generative AI–powered assistant for software development—to provide developers with a key tool.
+
+About BT Group
+
+BT Group builds and runs some of the largest fixed and mobile networks in the United Kingdom, providing broadband, mobile, TV, networking, and IT services to help customers connect, communicate, share, be entertained, and do business.
+
+Opportunity | Using Amazon Q Developer to Boost Productivity for BT Group
+
+BT Group builds and runs some of the largest fixed and mobile networks in the United Kingdom. In addition to broadband, mobile, TV, networking, and IT services, BT Group also provides han ||| ks in the United Kingdom, providing broadband, mobile, TV, networking, and IT services to help customers connect, communicate, share, be entertained, and do business.
+
+Opportunity | Using Amazon Q Developer to Boost Productivity for BT Group
+
+BT Group builds and runs some of the largest fixed and mobile networks in the United Kingdom. In addition to broadband, mobile, TV, networking, and IT services, BT Group also provides handsets, gaming, and insurance to help customers connect, communicate, share, be entertained, and do business.
+
+BT Group uses AWS as its primary cloud environment, so when generative AI burst onto the scene, it implemented an AI coding assistant from AWS—Amazon CodeWhisperer (now part of Amazon Q Developer)—in September 2023 to accelerate code development. Then, when Amazon Q Developer became generally available in April 2024, BT Group quickly decided to adopt the tool. “Amazon Q Developer brought great new capabilities such as the in-console chat functionality that ticked the boxes on what we were looking for, so the pivot to that tool was almost automatic,” says Noppen.
+
+A dedicated AWS team worked with BT Group to engage and train its developers in using Amazon Q Develop ||| for BT Group. Junior developers can take on difficult issues earlier in their careers because using Amazon Q Developer makes these cases more manageable. And because the solution streamlines workflows, developers can work faster and more efficiently using AI to get projects across the line.
+
+“Because we have AI in our back pocket, what used to be a hard problem now becomes manageable,” says Noppen. “We can be more ambitious in the way we develop our software because Amazon Q Developer creates the operational bandwidth for us to do so.”
+
+AWS Services Used
+
+Amazon Q Developer
+
+The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data.
+
+Learn more
+
+Did you find what you were looking for today?
+
+Let us know so we can improve the quality of the content on our pages.
+
+Yes
+
+No
+
+Create an AWS account
+
+Learn
+
+What Is AWS?
+
+What Is Cloud Computing?
+
+What Is Agentic AI?
+
+Cloud Computing Concepts Hub
+
+AWS Cloud Security
+
+What's New
+
+Blogs
+
+Press Releases
+
+Resources
+
+Getting Started
+
+Training
+
+AWS Trust Center
+
+AWS Solutions Library
+
+Architecture Center
+
+Product and Technical FAQs
+
+Analyst Reports
+
+AWS Partners
+
+Developers
+
+Builder ||| engagements rather than taking a one-size-fits-all approach. “It’s hard to overstate how important it has been for BT Group to work with the AWS adoption team to get people to use and understand Amazon Q Developer,” says Noppen. “The dedicated team helped us drive adoption to the level of use that we see today.”
+
+Solution | Doubling Acceptance Rates and Streamlining Workflows Using Amazon Q Developer
+
+Amazon Q Developer was fully implemented at BT Group by mid-November 2024, with around 2,000 active users. BT Group was eager to adopt Amazon Q Developer because of the new features and unique AI-powered agents that the service offered, including chat, code transformation, and testing capabilities. “After using Amazon CodeWhisperer for 9 months, our people were saying that it would be great if the tool could have chat functionality or focus on testing tasks,” says Noppen. “When Amazon Q Developer came along with these new capabilities, adopting it was a no-brainer.”
+
+AI-powered chat from the console in Amazon Q Developer is a key feature that BT Group developers use to cut down on time spent searching the internet for information or best practices, thus increasing the time they can sp ||| Using Amazon Q Developer
+
+Amazon Q Developer was fully implemented at BT Group by mid-November 2024, with around 2,000 active users. BT Group was eager to adopt Amazon Q Developer because of the new features and unique AI-powered agents that the service offered, including chat, code transformation, and testing capabilities. “After using Amazon CodeWhisperer for 9 months, our people were saying that it would be great if the tool could have chat functionality or focus on testing tasks,” says Noppen. “When Amazon Q Developer came along with these new capabilities, adopting it was a no-brainer.”
+
+AI-powered chat from the console in Amazon Q Developer is a key feature that BT Group developers use to cut down on time spent searching the internet for information or best practices, thus increasing the time they can spend coding or building solutions. “The chat modality is the standout feature that has really changed and improved things for us,” says Noppen. “When the in-console chat feature arrived with Amazon Q Developer, we could see usage go up in the company, and we also saw higher acceptance rates.” Acceptance rates—how often a suggestion from the AI is accepted by a developer—doubled ||| ies, adopting it was a no-brainer.”
+
+AI-powered chat from the console in Amazon Q Developer is a key feature that BT Group developers use to cut down on time spent searching the internet for information or best practices, thus increasing the time they can spend coding or building solutions. “The chat modality is the standout feature that has really changed and improved things for us,” says Noppen. “When the in-console chat feature arrived with Amazon Q Developer, we could see usage go up in the company, and we also saw higher acceptance rates.” Acceptance rates—how often a suggestion from the AI is accepted by a developer—doubled for BT Group for any interaction that included the chat feature.
+
+BT Group developers also use Amazon Q Developer to generate unit tests. “Testing is important, but nobody likes writing test code,” says Noppen. “Having AI help out with this is very useful, and we’ve seen a sizable chunk of test code generated using Amazon Q Developer.”
+
+Another useful feature of Amazon Q Developer is the in-line chat feature, a streamlined chat capability where developers can give feedback on the in-line code suggestions generated by the AI. BT Group also uses the Amazon Q ||| pend coding or building solutions. “The chat modality is the standout feature that has really changed and improved things for us,” says Noppen. “When the in-console chat feature arrived with Amazon Q Developer, we could see usage go up in the company, and we also saw higher acceptance rates.” Acceptance rates—how often a suggestion from the AI is accepted by a developer—doubled for BT Group for any interaction that included the chat feature.
+
+BT Group developers also use Amazon Q Developer to generate unit tests. “Testing is important, but nobody likes writing test code,” says Noppen. “Having AI help out with this is very useful, and we’ve seen a sizable chunk of test code generated using Amazon Q Developer.”
+
+Another useful feature of Amazon Q Developer is the in-line chat feature, a streamlined chat capability where developers can give feedback on the in-line code suggestions generated by the AI. BT Group also uses the Amazon Q Developer transformation capabilities, which can transform project code from older to newer versions that are better maintained and pose fewer security issues. This type of update, although important, often fell by the wayside previously because it took so ||| es—how often a suggestion from the AI is accepted by a developer—doubled for BT Group for any interaction that included the chat feature.
+
+BT Group developers also use Amazon Q Developer to generate unit tests. “Testing is important, but nobody likes writing test code,” says Noppen. “Having AI help out with this is very useful, and we’ve seen a sizable chunk of test code generated using Amazon Q Developer.”
+
+Another useful feature of Amazon Q Developer is the in-line chat feature, a streamlined chat capability where developers can give feedback on the in-line code suggestions generated by the AI. BT Group also uses the Amazon Q Developer transformation capabilities, which can transform project code from older to newer versions that are better maintained and pose fewer security issues. This type of update, although important, often fell by the wayside previously because it took so much time.
+
+Amazon Q Developer generates over 2 million lines of code per year for BT Group, compared with 2.5–3 million lines of code that developers previously produced annually. “Part of that previous 2.5 million lines of code is now being written by Amazon Q Developer, and Amazon Q Developer also adds so ||| project code from older to newer versions that are better maintained and pose fewer security issues. This type of update, although important, often fell by the wayside previously because it took so much time.
+
+Amazon Q Developer generates over 2 million lines of code per year for BT Group, compared with 2.5–3 million lines of code that developers previously produced annually. “Part of that previous 2.5 million lines of code is now being written by Amazon Q Developer, and Amazon Q Developer also adds some stuff over the top to help us solve other problems,” says Noppen. BT Group also uses the AI tool to maintain code that has already been written.
+
+The solution streamlines processes and workflows for the company. Using AI, BT Group can accomplish more—not only writing more code but also testing, updating, and maintaining existing code—with the same amount of people. “Our jobs as we know them will change over time, and this is the golden opportunity for our employees to learn to use this tool well so that in the future they are more employable,” says Noppen.
+
+Outcome | Innovating Faster Using Amazon Q Developer
+
+Using Amazon Q Developer has simplified development for BT Group. Junior ||| ing code—with the same amount of people. “Our jobs as we know them will change over time, and this is the golden opportunity for our employees to learn to use this tool well so that in the future they are more employable,” says Noppen.
+
+Outcome | Innovating Faster Using Amazon Q Developer
+
+Using Amazon Q Developer has simplified development for BT Group. Junior developers can take on difficult issues earlier in their careers because using Amazon Q Developer makes these cases more manageable. And because the solution streamlines workflows, developers can work faster and more efficiently using AI to get projects across the line.
+
+“Because we have AI in our back pocket, what used to be a hard problem now becomes manageable,” says Noppen. “We can be more ambitious in the way we develop our software because Amazon Q Developer creates the operational bandwidth for us to do so.”
+
+AWS Services Used
+
+Amazon Q Developer
+
+The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data.
+
+Learn more
+
+Did you find what you were looking for today?
+
+Let us know so we can improve the quality of the content on our pages.
+
+Yes
+
+No
+
+Create",no,no,yes,software_development_it,unclear,developers,internal,live_scaled,productivity;time_saving,not_applicable,unclear,none,DUPG-007,operational,accept,"Qualifying GenAI software-development use case. Official AWS technology-partner evidence describes Amazon Q Developer used for code generation, unit-test generation and code transformation by approximately 2,000 BT developers. Keep as one consolidated use case. Retain technology_partner provenance and the AR2024 corroboration flag."
+BT-OP-005,BT Group,BT.A,BT Group plc Annual Report 2024,BT.A_company_annual_report_previous_fy2024.pdf,,annual_report_previous,company_primary,p.48,generative AI,A,1,"optimum negotiation strategies and tactics, and negotiates autonomously. – Autonomous AI-powered platform Globality is being widely adopted. Its generative AI features are speeding up our scoping processes and streamlining how we define what we need. Plus its new E-Negotiation and online NDA features ar",no,no,yes,operations_supply_chain,finance_administration,employees,internal,live_limited,time_saving;productivity,not_applicable,unclear,none,,operational,needs_more_evidence,"Annual-report evidence appears to describe a concrete platform used for procurement or negotiation, but the current staging context must be checked for explicit qualifying GenAI evidence and deployment detail. Do not reject yet, but do not promote without confirming that Globality is generative AI in this specific BT use."

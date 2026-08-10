@@ -1,0 +1,13 @@
+{
+  "slug": "lloyds-banking-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Lloyds Banking Group",
+      "ticker": "LLOY",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:59:52Z"
+    }
+  }
+}

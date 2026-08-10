@@ -1,0 +1,58 @@
+{
+  "slug": "spirax-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Spirax Group",
+      "ticker": "SPX",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-06T10:00:35Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-06T11:03:27Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T14:16:49Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 6,
+      "stage_b_hits": 26,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T14:27:07Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 5,
+      "rejected_candidates": 20,
+      "duplicate_groups": 6,
+      "passages_grouped": 7,
+      "timestamp": "2026-08-07T14:27:27Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 5,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T15:01:43Z"
+    }
+  }
+}

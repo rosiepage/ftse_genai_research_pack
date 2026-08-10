@@ -1,0 +1,58 @@
+{
+  "slug": "vodafone-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Vodafone Group",
+      "ticker": "VOD",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:17:12Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-20T21:36:57Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 1,
+      "extracted_html": 1,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-20T21:38:50Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 23,
+      "stage_b_hits": 53,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-20T21:43:02Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 5,
+      "governance_candidates": 8,
+      "rejected_candidates": 25,
+      "duplicate_groups": 18,
+      "passages_grouped": 38,
+      "timestamp": "2026-07-20T21:43:33Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 7,
+      "timestamp": "2026-07-20T21:49:58Z"
+    }
+  }
+}

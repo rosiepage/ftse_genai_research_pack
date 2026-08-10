@@ -1,0 +1,58 @@
+{
+  "slug": "lion-finance-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Lion Finance Group",
+      "ticker": "BGEO",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-07T21:29:28Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-07T21:35:46Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T21:38:41Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 17,
+      "stage_b_hits": 67,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T21:41:18Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 2,
+      "governance_candidates": 6,
+      "rejected_candidates": 44,
+      "duplicate_groups": 16,
+      "passages_grouped": 32,
+      "timestamp": "2026-08-07T21:41:40Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 2,
+      "governance_rows_added": 6,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T22:40:19Z"
+    }
+  }
+}

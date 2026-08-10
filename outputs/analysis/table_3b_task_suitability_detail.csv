@@ -1,0 +1,59 @@
+record_id,company,sector,use_case_name,primary_business_function,deployment_stage,input_type,output_type,cost_of_error,fit_judgement
+AZN-UC-002,AstraZeneca,Pharmaceuticals & biotechnology,Microsoft Copilot for R&D task guidance,research_development,live_limited,unstructured_language,generative_interpretive,low,good
+AZN-UC-003,AstraZeneca,Pharmaceuticals & biotechnology,"AWS Bedrock Agents-based ""Development Assistant"" for R&D data queries",research_development,live_limited,unstructured_language,generative_interpretive,medium,good
+AZN-UC-004C,AstraZeneca,Pharmaceuticals & biotechnology,Foundation-model analysis of real-world evidence for hypothesis generation,research_development,live_limited,structured_or_nonlanguage,generative_interpretive,low,partial
+TSCO-UC-002,Tesco,Food & drug retailing,Tesco Media Creative Studio -- GenAI ad-creative generation tool,marketing_content,live_limited,structured_or_nonlanguage,generative_interpretive,low,good
+BT-UC-001,BT Group,Telecommunications services,GenAI Gateway: Openreach engineering-note summarisation,operations_supply_chain,pilot,unstructured_language,generative_interpretive,low,good
+BT-UC-002,BT Group,Telecommunications services,GenAI Gateway: contract analysis for Business/legal/procurement,risk_legal_compliance,live_limited,unstructured_language,generative_interpretive,medium,good
+BT-UC-003,BT Group,Telecommunications services,Sprinklr/Aimee generative-AI customer service,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+BT-UC-004,BT Group,Telecommunications services,"Amazon Q Developer for code generation, testing and transformation",software_development_it,live_scaled,unstructured_language,generative_interpretive,low,good
+RR-UC-001,Rolls-Royce Holdings,Aerospace & defence,Databricks cGAN for preliminary aero-engine design generation,research_development,pilot,structured_or_nonlanguage,generative_interpretive,low,partial
+EXPN-UC-001,Experian,Support services,Experian Assistant for Model Risk Management -- GenAI-enabled documentation and governance automation,risk_legal_compliance,live_limited,unstructured_language,generative_interpretive,medium,good
+RIO-UC-001,Rio Tinto,Mining,GPT-like knowledge agent for the Annual Planning Review workshop,knowledge_document_work,pilot,unstructured_language,generative_interpretive,low,good
+DGE-UC-001,Diageo,Beverages,Johnnie Walker x Scott Naismith generative-AI bottle/label personalisation pilot,product_service_innovation,pilot,structured_or_nonlanguage,generative_interpretive,low,partial
+DGE-UC-002,Diageo,Beverages,Generative-AI chatbot for cybersecurity training and phishing simulation,cybersecurity,live_limited,unstructured_language,generative_interpretive,low,good
+DGE-UC-003,Diageo,Beverages,'What's Your Cocktail?' generative-AI food-pairing recommendation platform,product_service_innovation,live_limited,structured_or_nonlanguage,generative_interpretive,low,partial
+VOD-UC-001,Vodafone Group,Mobile telecommunications,SuperTOBi generative-AI customer virtual assistant,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+VOD-UC-002,Vodafone Group,Mobile telecommunications,Copilot for Microsoft 365 employee productivity rollout,software_development_it,live_scaled,unstructured_language,generative_interpretive,low,good
+LGEN-UC-001,Legal & General,Life insurance,Microsoft 365 Copilot rollout and Retail-business customer-service AI tool,customer_service,live_scaled,mixed,mixed,medium,mixed_bundle
+RKT-UC-001,Reckitt,Household goods & home construction,"GenAI marketing pilots for concept development and content localisation (Gaviscon, Finish)",marketing_content,pilot,unstructured_language,generative_interpretive,low,good
+SHEL-UC-001,Shell plc,Oil & gas producers,SparkCognition/Shell generative-AI subsurface exploration imaging,research_development,pilot,structured_or_nonlanguage,generative_interpretive,high,partial
+HSBA-UC-001,HSBC,Banks,HSBC/Google Cloud Gemini-powered decision assistant and AI banking partnership,customer_service,live_limited,mixed,mixed,high,mixed_bundle
+HSBA-UC-002,HSBC,Banks,HSBC/Mistral AI self-hosted generative-AI productivity platform,software_development_it,live_limited,unstructured_language,generative_interpretive,medium,good
+GSK-UC-001,GSK plc,Pharmaceuticals & biotechnology,Generative AI for manufacturing investigation-data review across 20+ sites,operations_supply_chain,live_scaled,unstructured_language,generative_interpretive,medium,good
+REL-UC-001,RELX,Media,Lexis+ with Protege -- generative-AI legal research and drafting platform,knowledge_document_work,live_scaled,unstructured_language,generative_interpretive,high,good
+REL-UC-002,RELX,Media,PharmaPendium AI -- generative-AI regulatory intelligence assistant,risk_legal_compliance,live_limited,unstructured_language,generative_interpretive,high,good
+REL-UC-003,RELX,Media,ClinicalKey AI -- generative-AI clinical information assistant,knowledge_document_work,live_scaled,unstructured_language,generative_interpretive,high,good
+REL-UC-004,RELX,Media,Ask ICIS -- generative-AI commodities/energy market-intelligence assistant,knowledge_document_work,live_scaled,unstructured_language,generative_interpretive,medium,good
+LSEG-UC-001,London Stock Exchange Group,Financial services,Financial Meeting Prep -- Gen AI meeting-briefing report generator,knowledge_document_work,live_limited,mixed,generative_interpretive,medium,good
+BARC-UC-001,Barclays,Banks,Microsoft 365 Copilot -- bank-wide colleague productivity assistant,other,live_scaled,unstructured_language,generative_interpretive,low,good
+AV-UC-001,Aviva,Life insurance,GenAI claims summarisation tool -- UK General Insurance,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+AV-UC-002,Aviva,Life insurance,Generative-AI GP medical report summarisation tool for underwriting,risk_legal_compliance,live_limited,unstructured_language,generative_interpretive,high,good
+AV-UC-003,Aviva,Life insurance,Microsoft 365 Copilot Chat and GitHub Copilot -- company-wide colleague/developer rollout,other,live_scaled,unstructured_language,generative_interpretive,low,good
+SVT-UC-001,Severn Trent,Multiline utilities,Copilot (GPT-4) -- colleague productivity assistant,other,live_limited,unstructured_language,generative_interpretive,low,good
+MKS-UC-001,Marks & Spencer,Food & drug retailing,Microsoft 365 Copilot -- store manager productivity assistant,knowledge_document_work,live_limited,unstructured_language,generative_interpretive,low,good
+STAN-UC-001,Standard Chartered,Banks,SC GPT -- bespoke in-house LLM for employees,other,live_scaled,unstructured_language,generative_interpretive,low,good
+STAN-UC-002,Standard Chartered,Banks,GitHub Copilot -- developer coding assistant,software_development_it,live_limited,unstructured_language,generative_interpretive,low,good
+NWG-UC-001,NatWest Group,Banks,AI Digital Enabler and Microsoft Copilot Chat -- colleague GenAI rollout,other,live_scaled,unstructured_language,generative_interpretive,low,good
+SSE-UC-001,SSE plc,Electrical utilities & independent power producers,Nero -- generative-AI customer virtual assistant,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+AUTO-UC-001,Auto Trader Group,Media,Co-Driver (AI Generated Descriptions) -- generative-AI vehicle-listing assistant,marketing_content,live_limited,structured_or_nonlanguage,generative_interpretive,low,good
+ITRK-UC-001,Intertek,Support services,Synthesia-powered generative-AI training-video product (Intertek People Assurance),human_resources,live_limited,structured_or_nonlanguage,generative_interpretive,low,good
+CTEC-UC-001,Convatec,Health care equipment & supplies,Microsoft Copilot and Synthesia -- enterprise-scale generative-AI deployment,other,live_limited,unstructured_language,generative_interpretive,low,good
+ENT-UC-001,Entain,Travel & leisure,SportingBOT -- generative-AI personalised betting assistant,customer_service,live_limited,unstructured_language,generative_interpretive,medium,good
+SDR-UC-001,Schroders,Financial services,GAiiA -- Generative AI Investment Analyst,research_development,live_limited,unstructured_language,generative_interpretive,high,good
+SDR-UC-002,Schroders,Financial services,Genie -- GPT-based internal colleague assistant,other,live_scaled,unstructured_language,generative_interpretive,low,good
+PSON-UC-001,Pearson plc,Media,Claude and Claude Code -- engineering and business-function deployment,software_development_it,live_limited,unstructured_language,generative_interpretive,low,good
+CNA-UC-001,Centrica,Multiline utilities,Microsoft 365 Copilot Agent Builder -- email compliance-checking agent,risk_legal_compliance,live_scaled,unstructured_language,classification_or_analytics_leaning,medium,partial
+KGF-UC-001,Kingfisher plc,Retailers,Hello Casto -- generative-AI DIY assistant (built on the Athena framework),customer_service,live_limited,unstructured_language,generative_interpretive,medium,good
+RTO-UC-001,Rentokil Initial,Support services,Google Gemini AI -- company-wide Workspace productivity assistant,knowledge_document_work,live_scaled,unstructured_language,generative_interpretive,low,good
+HSX-UC-001,Hiscox,Non-life insurance,Gemini-powered lead underwriting model (sabotage and terrorism line),risk_legal_compliance,live_limited,unstructured_language,generative_interpretive,high,good
+HSX-UC-002,Hiscox,Non-life insurance,Microsoft 365 Copilot -- claims-handling productivity assistant,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+INVP-UC-001,Investec,Financial services,Microsoft Copilot for Sales -- banker productivity assistant,sales,live_scaled,unstructured_language,generative_interpretive,low,good
+SPX-UC-001,Spirax Group,Industrial engineering,MiM -- proprietary large language model for sales-engineer training and productivity,sales,live_scaled,unstructured_language,generative_interpretive,low,good
+MTLN-UC-001,Metlen Energy & Metals,Multiline utilities,Avokado CORTEX -- GenAI energy-management assistant for B2B customers,product_service_innovation,live_limited,unstructured_language,generative_interpretive,medium,good
+BGEO-UC-001,Lion Finance Group,Banking services,Georgian-language Generative AI customer-service chatbot,customer_service,live_scaled,unstructured_language,generative_interpretive,medium,good
+BGEO-UC-002,Lion Finance Group,Banking services,Enterprise AI platform -- employee-built custom AI assistants,knowledge_document_work,live_scaled,unstructured_language,generative_interpretive,low,good
+SGRO-UC-001,Segro,Real estate investment trusts,Microsoft Copilot -- company-wide employee rollout,other,live_scaled,unstructured_language,generative_interpretive,low,good
+BA-UC-001,BAE Systems,Aerospace & defence,LLM/generative-AI natural-language drone command and self-reconfiguration,product_service_innovation,pilot,unstructured_language,mixed,high,mixed_bundle
+BA-UC-002,BAE Systems,Aerospace & defence,Typhoon AI maintenance assistant (LLM trained on maintenance manuals),knowledge_document_work,pilot,unstructured_language,generative_interpretive,high,good
+BA-UC-003,BAE Systems,Aerospace & defence,Operationalised AI cyber-threat-insight system for customers,cybersecurity,live_limited,unstructured_language,generative_interpretive,high,good

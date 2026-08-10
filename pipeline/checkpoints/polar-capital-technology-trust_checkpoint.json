@@ -1,0 +1,58 @@
+{
+  "slug": "polar-capital-technology-trust",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Polar Capital Technology Trust",
+      "ticker": "PCT",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-07T21:29:29Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-07T21:36:38Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-07T21:39:13Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 60,
+      "stage_b_hits": 284,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-07T21:41:20Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 10,
+      "governance_candidates": 7,
+      "rejected_candidates": 52,
+      "duplicate_groups": 47,
+      "passages_grouped": 275,
+      "timestamp": "2026-08-07T21:41:43Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-08-07T22:40:31Z"
+    }
+  }
+}

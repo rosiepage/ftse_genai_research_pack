@@ -1,0 +1,65 @@
+{
+  "slug": "natwest-group",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "NatWest Group",
+      "ticker": "NWG",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-04T15:20:03Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 3,
+      "error_count": 0,
+      "warning_count": 1,
+      "timestamp": "2026-08-04T15:38:44Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-04T15:40:59Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 1,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-04T15:45:46Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 37,
+      "stage_b_hits": 234,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T09:18:00Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 6,
+      "governance_candidates": 19,
+      "rejected_candidates": 128,
+      "duplicate_groups": 64,
+      "passages_grouped": 118,
+      "timestamp": "2026-08-05T09:18:31Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 6,
+      "governance_rows_added": 19,
+      "rejected_rows_added": 3,
+      "timestamp": "2026-08-05T10:16:14Z"
+    }
+  }
+}

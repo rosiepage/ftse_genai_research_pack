@@ -1,0 +1,13 @@
+{
+  "slug": "bp",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "BP",
+      "ticker": "BP",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:17:12Z"
+    }
+  }
+}

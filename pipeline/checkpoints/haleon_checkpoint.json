@@ -1,0 +1,38 @@
+{
+  "slug": "haleon",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Haleon",
+      "ticker": "HLN",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T14:01:34Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 2,
+      "error_count": 0,
+      "warning_count": 0,
+      "timestamp": "2026-08-05T15:18:51Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 0,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 2,
+      "failed": 0,
+      "timestamp": "2026-08-05T15:33:13Z"
+    },
+    "extract_text": {
+      "status": "failed",
+      "extracted_pdf": 0,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 2,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T15:20:15Z"
+    }
+  }
+}

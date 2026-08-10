@@ -1,0 +1,58 @@
+{
+  "slug": "tesco",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Tesco",
+      "ticker": "TSCO",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-15T14:05:15Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 5,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-16T14:50:28Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 0,
+      "extracted_html": 2,
+      "skipped_existing": 3,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-16T15:17:49Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 5,
+      "stage_a_hits": 5,
+      "stage_b_hits": 50,
+      "possible_extraction_artifacts": 1,
+      "timestamp": "2026-07-16T16:14:24Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 2,
+      "strategic_candidates": 8,
+      "governance_candidates": 6,
+      "rejected_candidates": 16,
+      "duplicate_groups": 8,
+      "passages_grouped": 23,
+      "timestamp": "2026-07-16T17:26:34Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 5,
+      "operational_rows_added": 2,
+      "strategic_rows_added": 4,
+      "governance_rows_added": 6,
+      "rejected_rows_added": 16,
+      "timestamp": "2026-07-17T11:24:54Z"
+    }
+  }
+}

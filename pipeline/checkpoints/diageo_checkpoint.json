@@ -1,0 +1,58 @@
+{
+  "slug": "diageo",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Diageo",
+      "ticker": "DGE",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:01:44Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-20T21:10:19Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 1,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-20T21:19:24Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 9,
+      "stage_b_hits": 30,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-20T21:22:03Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 0,
+      "governance_candidates": 5,
+      "rejected_candidates": 20,
+      "duplicate_groups": 6,
+      "passages_grouped": 14,
+      "timestamp": "2026-07-20T21:22:54Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 3,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-07-20T21:28:02Z"
+    }
+  }
+}

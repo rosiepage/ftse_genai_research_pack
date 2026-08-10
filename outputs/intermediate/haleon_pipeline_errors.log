@@ -1,0 +1,4 @@
+2026-08-05T15:20:15Z | 04_extract_text | HLN_company_annual_report_current_fy2025_2026-02.html: extracted visible text is near-empty (0 characters, minimum 200)
+2026-08-05T15:20:15Z | 04_extract_text | HLN_company_annual_report_previous_fy2024_2025-02.html: extracted visible text is near-empty (0 characters, minimum 200)
+2026-08-05T15:33:13Z | 03_download_sources | manual_collection_required downloading https://www.haleon.com/content/dam/haleon/corporate/documents/investors/oar-2025/Annual-Report-and-Form-20-F-2025.pdf.downloadasset.pdf: HTTP 403 -- Forbidden
+2026-08-05T15:33:13Z | 03_download_sources | manual_collection_required downloading https://www.haleon.com/content/dam/haleon/corporate/documents/investors/oar-2024/haleon-annual-report-2024-strategic-report.pdf.downloadasset.pdf: HTTP 403 -- Forbidden

@@ -1,0 +1,58 @@
+{
+  "slug": "croda-international",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Croda International",
+      "ticker": "CRDA",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:17:13Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-20T21:38:03Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-20T21:42:31Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 0,
+      "stage_b_hits": 27,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-20T21:43:11Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 1,
+      "governance_candidates": 0,
+      "rejected_candidates": 17,
+      "duplicate_groups": 5,
+      "passages_grouped": 9,
+      "timestamp": "2026-07-20T21:43:35Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-07-20T21:50:00Z"
+    }
+  }
+}

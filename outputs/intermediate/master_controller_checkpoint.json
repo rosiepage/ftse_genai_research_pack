@@ -1,0 +1,78 @@
+{
+  "controller_version": "1.0",
+  "last_updated": "2026-08-08T12:00:00",
+  "session_number": 5,
+  "session_status": "final_closure_manual_browser_pass_complete",
+  "totals": {
+    "total_companies_in_scope": 100,
+    "promoted_complete": 47,
+    "completed_null_result": 40,
+    "blocked_manual_browser": 13,
+    "excluded_with_documented_reason": 0,
+    "not_started": 0
+  },
+  "promoted_companies": [
+    "AstraZeneca", "Tesco", "BT Group", "Rolls-Royce Holdings", "Experian", "Rio Tinto",
+    "Admiral Group", "Informa", "Diageo", "National Grid plc", "Vodafone Group",
+    "Legal & General", "Reckitt", "Croda International", "Shell plc", "HSBC", "GSK plc",
+    "RELX", "Next plc", "Whitbread", "Barratt Redrow", "London Stock Exchange Group",
+    "Smiths Group", "British Land", "Barclays", "Aviva", "Severn Trent",
+    "Marks & Spencer", "Standard Chartered", "NatWest Group", "SSE plc", "Auto Trader Group",
+    "Intertek", "Convatec", "Entain", "Schroders", "Pearson plc", "Centrica", "Kingfisher plc",
+    "Rentokil Initial", "Hiscox", "Investec", "Spirax Group", "Metlen Energy & Metals",
+    "Lion Finance Group", "Segro", "BAE Systems"
+  ],
+  "completed_null_result_companies": [
+    "Halma plc", "Prudential plc", "International Airlines Group", "Persimmon",
+    "Anglo American plc", "Bunzl", "Sainsbury's", "Smith & Nephew",
+    "British American Tobacco", "IHG Hotels & Resorts", "Glencore", "Babcock International",
+    "JD Sports", "Coca-Cola Europacific Partners", "Games Workshop",
+    "Airtel Africa", "Beazley", "Howdens Joinery", "Weir Group",
+    "Antofagasta plc", "DCC plc", "Diploma", "United Utilities",
+    "Melrose Industries", "3i", "IG Group", "Fresnillo plc",
+    "Aberdeen Group", "St. James's Place", "Land Securities", "Endeavour Mining",
+    "Alliance Witan", "F&C Investment Trust", "Intermediate Capital Group", "LondonMetric Property",
+    "Pershing Square Holdings", "Polar Capital Technology Trust", "Scottish Mortgage Investment Trust",
+    "Standard Life", "Tritax Big Box REIT"
+  ],
+  "blocked_manual_browser_companies": [
+    "Lloyds Banking Group", "Unilever", "Sage Group", "BP", "Compass Group",
+    "Imperial Brands", "Haleon", "Computacenter", "Associated British Foods", "Burberry Group",
+    "M&G", "IMI", "Coca-Cola HBC"
+  ],
+  "not_started_companies": [],
+  "companies_processed_this_session": ["BAE Systems"],
+  "last_completed_company": "BAE Systems",
+  "next_eligible_company": "None -- all 100 FTSE 100 constituents have a final status; 13 remain genuinely blocked pending real human browser access.",
+  "next_incomplete_pipeline_action": "The FTSE 100 scale-up is at its practical end state: 87 companies fully processed (47 promoted_complete, 40 completed_null_result), 13 blocked_manual_browser after a dedicated resolution pass using WebFetch/WebSearch (the only automated-fetch tools available -- no true interactive browser exists in this environment). Every one of the 13 was re-attempted and re-confirmed blocked this session (see manual_browser_resolution_queue_controller.csv for exact per-row detail). Further progress on the 13 requires either: (a) a real human browser session for the 12 domain-wide 403/Incapsula/timeout/bot-challenge blocks (Lloyds Banking Group, Unilever, Sage Group, BP, Compass Group, Imperial Brands, Haleon, Computacenter, Associated British Foods, Burberry Group, IMI, Coca-Cola HBC); or (b) for M&G specifically, either an out-of-pipeline PDF-to-text conversion of the already-downloaded encrypted PDFs, or a deliberate future decision to add the 'cryptography' Python package to the environment (not something this session should do unilaterally, per the project's environment-stability rule). Otherwise, proceed directly to final report drafting, summary tables, sector comparisons, and the methodological audit log using the 87-company dataset (per 01_PROJECT_BRIEF.md's recommended workflow steps 9-10), explicitly disclosing the 13-company gap.",
+  "provisional_confirmed_totals": {
+    "provisional": 63,
+    "confirmed": 58
+  },
+  "latest_validation_totals": {
+    "errors": 0,
+    "warnings": 2619,
+    "information": 86,
+    "validated_date": "2026-08-08"
+  },
+  "snapshot_created_this_session": "outputs/intermediate/analysis_snapshot_2026-08-08_final_closure/ (session 5, final closure -- manual-browser resolution pass complete, created and SHA256-verified).",
+  "files_changed_this_session": [
+    "pilot_companies.csv (11 new rows -- all remaining not_started constituents)",
+    "pipeline/scripts/07_promote_reviewed_staging.py (SOURCE_MANIFEST_OVERRIDES, SOURCE_CANDIDATE_TO_FILENAME, OPERATIONAL_OVERRIDES extended for all 11 session-4 companies)",
+    "pipeline/scripts/08_validate_promoted_data.py (COMPANIES_IN_SCOPE, EXPECTED_OPERATIONAL_COUNTS extended for all 11 session-4 companies)",
+    "outputs/intermediate/*_source_candidates.csv (11 companies)",
+    "outputs/intermediate/*_operational_/_strategic_/_governance_/_rejected_candidates_staging.csv (11 companies)",
+    "source_manifest.csv", "use_case_dataset_template.csv", "strategic_capability_building_findings.csv",
+    "governance_and_enablement_findings.csv", "company_summary_template.csv",
+    "outputs/intermediate/promoted_data_validation_report.csv",
+    "outputs/intermediate/session4_summary.csv",
+    "outputs/intermediate/analysis_snapshot_2026-08-07_scaleup_86_final/",
+    "PROJECT_PROGRESS.md", "outputs/intermediate/master_controller_checkpoint.json",
+    "outputs/intermediate/manual_browser_resolution_queue_controller.csv (BAE Systems rows removed; dated 2026-08-08 retry notes appended to all 28 remaining rows)",
+    "pipeline/scripts/07_promote_reviewed_staging.py (SOURCE_MANIFEST_OVERRIDES, SOURCE_CANDIDATE_TO_FILENAME, OPERATIONAL_OVERRIDES extended for BAE Systems)",
+    "pipeline/scripts/08_validate_promoted_data.py (COMPANIES_IN_SCOPE, EXPECTED_OPERATIONAL_COUNTS extended for BAE Systems)",
+    "outputs/intermediate/bae-systems_operational_/_governance_/_rejected_candidates_staging.csv",
+    "outputs/intermediate/analysis_snapshot_2026-08-08_final_closure/"
+  ],
+  "notes": "SESSION 5 (final closure / manual-browser resolution pass) COMPLETE. Worked through every row of the existing manual_browser_resolution_queue_controller.csv for the 14 companies left blocked_manual_browser at the end of session 4. This environment has no true interactive browser -- only WebFetch (distinct from the pipeline's own Python download script) and WebSearch were available; all results labelled fetch-verified, never browser-verified, per the project's capability-honesty convention. RESOLVED: BAE Systems (blocked_manual_browser -> promoted_complete) -- the previously-documented Incapsula bot-protection block on investors.baesystems.com no longer reproduced; both annual reports downloaded cleanly as genuine, correctly-sized PDFs (11.5MB/11.3MB, not tiny challenge-page stubs) via the pipeline's own download script. Yielded 3 confirmed operational GenAI use cases, all explicitly naming LLMs/generative AI and fragmented across over-consolidated rejected staging rows (same recurring staging-engine limitation seen throughout this project): (1) LLM/generative-AI natural-language drone command and self-reconfiguration (2025 AR, deployment_stage=pilot, 'we demonstrated'); (2) Typhoon AI maintenance assistant, an LLM trained on aircraft maintenance manuals (2024 AR, pilot); (3) an 'operationalised' AI cyber-threat-insight system for customers, using an LLM trained on nearly a decade of expert analysis (2024 AR, deployment_stage=live_limited, explicit 'operationalised' status). One governance finding also accepted (BAE's own AI/cyber/data workforce-training investment). STILL BLOCKED (13 companies, every one re-attempted and re-confirmed this pass, not assumed): Lloyds Banking Group (Cloudflare Error-1007 block on all 3 pending rows; NSM alternative searched but no usable direct artefact URL found, NSM's own search UI is JS-driven), Unilever (403 on both press releases), Sage Group (403 on all 3 pending rows), BP (403 on both press releases, including the high-value unverified 'Wells Assistant' lead), Compass Group (403), Imperial Brands (403 on direct PDF; bot-challenge stub on landing page), Haleon (403 on both years), Computacenter (WebFetch timeout on both years, consistent with prior persistent domain-wide timeout), Associated British Foods (403 on both years), Burberry Group (403; could not check the unconfirmed third-party 'Penguin' clientelling-platform claim), IMI (403 confirmed via the authoritative 03_download_sources.py path this pass, despite WebFetch's failure mode shifting to its own size-limit error rather than an explicit block -- documented as a nuance, not a resolution, since the authoritative tool still fails), Coca-Cola HBC (403 on both years; could not check the unconfirmed third-party OpenAI/energy-consumption claim). M&G is a DISTINCT, precisely re-diagnosed blocker category: both annual reports download successfully (investor-relations page itself loaded fine, no 403) but are AES-encrypted; a local diagnostic with NO new packages installed (per the project's environment-stability rule) confirms pypdf.PdfReader() raises DependencyError('cryptography>=3.1 is required for AES algorithm') immediately on open -- a text-extraction blocker, not an access blocker, requiring either an out-of-pipeline PDF-to-text conversion or a deliberate future decision to add the cryptography package (not something this session did unilaterally). FINAL STATE: 47 promoted_complete, 40 completed_null_result, 13 blocked_manual_browser, 0 not_started (100 total, independently cross-checked: 87 in company_summary_template.csv + 13 blocked = 100, no company missing or double-counted). Cross-company validation: 0 errors, 2619 warnings, 86 information; no duplicate IDs in any of the 6 main datasets; row-count deltas verified (source_manifest +2, use_case +3, governance +1, company_summary +1); no *.partial or *.tmp files anywhere. Final snapshot analysis_snapshot_2026-08-08_final_closure/ created and SHA256-verified. Cumulative operational counts: 63 provisional / 58 confirmed. THE FTSE 100 DATASET IS NOW READY FOR FINAL REPORT DRAFTING, provided any summary statistics or sector comparisons explicitly disclose the 13-company gap rather than treating the 87-company dataset as fully representative of the index. No further automated or manual-browser retry loops should be started without new information (e.g. a real human browser session becoming available, or a project-owner decision on the M&G cryptography-package question)."
+}

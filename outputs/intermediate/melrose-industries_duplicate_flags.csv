@@ -1,0 +1,2 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Melrose Industries,MRO-REJ-003,rejected_candidates_staging,same_source_consolidation,not_applicable,2 passages on the same page (p.66) of MRO_company_annual_report_previous_fy2024_2025-03.pdf describe the same ordinary automation theme and were consolidated into one row.,yes,,

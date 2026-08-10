@@ -1,0 +1,65 @@
+{
+  "slug": "convatec",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Convatec",
+      "ticker": "CTEC",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-08-05T11:26:43Z"
+    },
+    "validate_source_candidates": {
+      "status": "pass",
+      "rows_checked": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "timestamp": "2026-08-05T12:35:55Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 2,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-08-05T12:36:17Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-08-05T13:00:42Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 2,
+      "stage_a_hits": 3,
+      "stage_b_hits": 75,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-08-05T13:05:21Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 7,
+      "governance_candidates": 11,
+      "rejected_candidates": 38,
+      "duplicate_groups": 21,
+      "passages_grouped": 22,
+      "timestamp": "2026-08-05T13:07:15Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 2,
+      "operational_rows_added": 1,
+      "strategic_rows_added": 7,
+      "governance_rows_added": 11,
+      "rejected_rows_added": 1,
+      "timestamp": "2026-08-05T13:28:20Z"
+    }
+  }
+}

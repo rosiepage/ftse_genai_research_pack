@@ -1,0 +1,2 @@
+duplicate_group_id,company,related_staging_ids,related_destination_files,relationship_type,similarity_score,duplicate_reason,human_review_required,reviewer_decision,reviewer_notes
+DUPG-001,Admiral Group,ADM-REJ-002,rejected_candidates_staging,same_source_consolidation,not_applicable,8 passages on the same page (not_applicable) of ADM_partner_partner_case_study_admiral-selects-google-cloud-to-accelerate-innovative-custom_2024-02-14.html describe the same vague general ai reference theme and were consolidated into one row.,yes,,

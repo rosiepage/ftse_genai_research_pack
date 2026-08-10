@@ -1,0 +1,58 @@
+{
+  "slug": "relx",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "RELX",
+      "ticker": "REL",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-20T21:59:54Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-20T22:06:09Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 2,
+      "extracted_html": 1,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-20T22:26:13Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 127,
+      "stage_b_hits": 393,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-20T22:28:40Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 7,
+      "governance_candidates": 35,
+      "rejected_candidates": 90,
+      "duplicate_groups": 78,
+      "passages_grouped": 388,
+      "timestamp": "2026-07-20T22:29:51Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 4,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 0,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-07-20T22:42:27Z"
+    }
+  }
+}

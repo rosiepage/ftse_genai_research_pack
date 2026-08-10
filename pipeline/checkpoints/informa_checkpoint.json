@@ -1,0 +1,58 @@
+{
+  "slug": "informa",
+  "stages": {
+    "setup_company": {
+      "status": "complete",
+      "company": "Informa",
+      "ticker": "INF",
+      "folder_created_or_present": true,
+      "checklist_created_or_present": true,
+      "timestamp": "2026-07-17T16:35:29Z"
+    },
+    "download_sources": {
+      "status": "complete",
+      "downloaded": 3,
+      "skipped_existing": 0,
+      "duplicate": 0,
+      "manual_collection_required": 0,
+      "failed": 0,
+      "timestamp": "2026-07-18T11:53:40Z"
+    },
+    "extract_text": {
+      "status": "complete",
+      "extracted_pdf": 3,
+      "extracted_html": 0,
+      "skipped_existing": 0,
+      "failed": 0,
+      "unsupported": 0,
+      "timestamp": "2026-07-18T12:00:18Z"
+    },
+    "screen_keywords": {
+      "status": "complete",
+      "files_screened": 3,
+      "stage_a_hits": 21,
+      "stage_b_hits": 160,
+      "possible_extraction_artifacts": 0,
+      "timestamp": "2026-07-18T12:00:50Z"
+    },
+    "prepare_staging_candidates": {
+      "status": "complete",
+      "operational_candidates": 0,
+      "strategic_candidates": 2,
+      "governance_candidates": 12,
+      "rejected_candidates": 63,
+      "duplicate_groups": 45,
+      "passages_grouped": 104,
+      "timestamp": "2026-07-18T12:01:19Z"
+    },
+    "promote_reviewed_staging": {
+      "status": "complete",
+      "manifest_rows_added": 3,
+      "operational_rows_added": 0,
+      "strategic_rows_added": 0,
+      "governance_rows_added": 1,
+      "rejected_rows_added": 0,
+      "timestamp": "2026-07-20T20:31:54Z"
+    }
+  }
+}
