@@ -646,4 +646,39 @@ Downgrading `mixed` to `internal` on the strength of one silent excerpt would be
 of unsupported inference this whole recheck exists to catch in the other direction -- it would
 swap an unverified upgrade for an unverified downgrade, not fix an error.
 
+---
+
+## measurement_basis: a new analysis-layer field for the 11 `measured` rows
+
+`benefit_evidence = measured` was treated as a single flat category in the recheck above, but the
+10-row review (§1) and the INVP-UC-001 follow-up above both surfaced real differences in *how
+solid* the "measured" figure actually is. This field records that distinction. **It exists only in
+this analysis file and the derived `outputs/analysis/` tables -- it is not added to
+`use_case_dataset_template.csv`,** per instruction; the live dataset's own schema is not modified.
+
+Three values, as specified:
+- `aggregate_company_reported` -- a company-wide (or clearly-scoped, e.g. named pilot-population)
+  stated metric.
+- `single_anecdote_vendor_sourced` -- n=1, sourced from vendor marketing material rather than the
+  company's own reporting.
+- `imprecise_magnitude_single_example` -- a vague order-of-magnitude figure tied to one
+  illustrative example, not a program-wide number.
+
+| record_id | Company | measurement_basis | Note |
+|---|---|---|---|
+| AZN-UC-002 | AstraZeneca | aggregate_company_reported | Not one of the 10 reclassified this session -- already `measured` beforehand. Included here because the field applies to every `measured` row. 1,200-employee survey; own `quantified_metric` field already caveats it as "surveyed sample, not company-wide." |
+| REL-UC-002 | RELX | aggregate_company_reported | As specified. |
+| BT-UC-004 | BT Group | aggregate_company_reported | As specified. |
+| SHEL-UC-001 | Shell plc | aggregate_company_reported | As specified. |
+| AV-UC-001 | Aviva | aggregate_company_reported | As specified. |
+| SPX-UC-001 | Spirax Group | aggregate_company_reported | As specified. |
+| BGEO-UC-001 | Lion Finance Group | aggregate_company_reported | As specified. |
+| BGEO-UC-002 | Lion Finance Group | aggregate_company_reported | As specified. |
+| HSX-UC-002 | Hiscox | single_anecdote_vendor_sourced | As specified. |
+| CNA-UC-001 | Centrica | imprecise_magnitude_single_example | As specified. |
+| INVP-UC-001 | Investec | aggregate_company_reported | **Not pre-assigned -- my classification, flagged for override.** The underlying figure is bank-wide and grounded in a stated comparison methodology (Copilot's own tracked metrics, legacy-system bankers vs. Copilot-using bankers), which is why it doesn't fit `single_anecdote` or `imprecise_magnitude` -- but it is also the only `aggregate_company_reported` row whose captured `evidence_quotation` is itself hedged as a company estimate ("we're estimating...approximately"), unlike the other 8 in this category. |
+
+**Resulting tier counts among the 11 `measured` rows:** aggregate_company_reported 9,
+single_anecdote_vendor_sourced 1, imprecise_magnitude_single_example 1.
+
 
