@@ -151,10 +151,14 @@ this dataset.
 service_quality 8 (14%); personalisation 4 (7%); accuracy 4 (7%); risk_reduction 3 (5%);
 none_stated 3 (5%); accessibility 3 (5%); innovation 2 (3%); cost_reduction 2 (3%).
 
-**Benefit evidence** (n=58): expected 23 (40%); observed_unquantified 24 (41%); **measured
-(quantified outcome with a defined metric or comparison) 11 (19%)**. See §6 for the full
-distribution and the 2026-08-09 recheck that corrected this from an original count of 1 measured
-row to 11 (`outputs/analysis/disclosed_use_case_spot_check.md`).
+**Benefit evidence** (n=58): expected 23 (40%); observed_unquantified 24 (41%); measured 11
+(19%) — of which 8 are company-reported operational figures (though ranging from BGEO's five
+precise metrics to REL-UC-002's unaveraged "up to 66%" ceiling), 1 is a self-reported employee
+survey (AstraZeneca), 1 is a single-employee anecdote from vendor marketing material
+(Hiscox/Microsoft), and 1 is a vague order-of-magnitude estimate (Centrica). See §6 for the full
+distribution and `outputs/analysis/disclosed_use_case_spot_check.md` for the row-by-row basis and
+the 2026-08-09/2026-08-11 recheck that corrected this from an original count of 1 measured row to
+11, then split those 11 into four evidentiary tiers.
 
 ---
 
@@ -271,18 +275,26 @@ operational bar.** Full list in `table_5_strategic_governance_vs_operational.csv
 | | technology_partner | 9 | 16% |
 | benefit_evidence (58 disclosed rows) | expected | 23 | 40% |
 | | observed_unquantified | 24 | 41% |
-| | **measured** | **11** | **19%** |
+| | measured — aggregate_company_reported | 8 | 13.8% |
+| | measured — survey_sample_self_reported | 1 | 1.7% |
+| | measured — single_anecdote_vendor_sourced | 1 | 1.7% |
+| | measured — imprecise_magnitude_single_example | 1 | 1.7% |
+| | **measured (total)** | **11** | **19%** |
 
-**Correction (2026-08-09):** `benefit_evidence` was originally recorded as expected 32/55%,
-observed_unquantified 25/43%, measured 1/2%. A full-population recheck of all 58 quotations
-against the coding manual's own definition of `measured` ("quantified outcome with defined metric
-or comparison") found 10 rows miscoded as `expected` or `observed_unquantified` despite their
-quotation containing an explicit benefit-quantifying figure (e.g. RELX's "66 percent" time
-savings, Lion Finance Group's "6,600 hours per month...10% to 56%...40% reduction"). Full
-row-by-row detail, including the reasoning for numbers that were deliberately *not* reclassified
-(deployment-scale/reach figures such as "70,000 employees" or "one million occasions" do not
-quantify a benefit), is in `outputs/analysis/disclosed_use_case_spot_check.md`. The figures below
-use the corrected counts.
+**Correction (2026-08-09, refined 2026-08-11):** `benefit_evidence` was originally recorded as
+expected 32/55%, observed_unquantified 25/43%, measured 1/2%. A full-population recheck of all 58
+quotations against the coding manual's own definition of `measured` ("quantified outcome with
+defined metric or comparison") found 10 rows miscoded as `expected` or `observed_unquantified`
+despite their quotation containing an explicit benefit-quantifying figure (e.g. RELX's "66
+percent" time savings, Lion Finance Group's "6,600 hours per month...10% to 56%...40% reduction").
+A second pass then split the resulting 11 `measured` rows into four evidentiary tiers, since
+"measured" was masking real differences in evidence quality — an operational, company-wide metric
+(Lion Finance Group's enterprise-platform figures) is not the same kind of evidence as a
+self-reported employee survey (AstraZeneca), a single employee's account in a vendor's marketing
+case study (Hiscox), or a vague "hundreds of hours" estimate (Centrica). Full row-by-row detail,
+including the reasoning for numbers that were deliberately *not* reclassified (deployment-scale/reach
+figures such as "70,000 employees" or "one million occasions" do not quantify a benefit), is in
+`outputs/analysis/disclosed_use_case_spot_check.md`. The figures below use the corrected counts.
 
 **Interpretation for reliability of conclusions:** the disclosed dataset is skewed toward
 `2_moderate`/`3_strong` by construction (that is the inclusion rule), so this is not an
@@ -290,12 +302,17 @@ independent quality check — but within that filtered set, roughly half (53%) r
 evidence, meaning "the specific use case is clear, but scale, stage or outcomes are incomplete"
 per the coding manual's own definition. Even with the corrected count, 81% of claimed benefits
 are either purely anticipated or observed-but-unquantified, and the 19% that are `measured` are
-still company-self-reported figures, not independently audited outcomes (survey samples,
-pilot-phase measurements, single-quarter snapshots) — **this dataset is better-suited to
-answering "is the company doing X with generative AI" than "is X working" or "how much value did
-X create," even after this correction.** Any report language about productivity gains, efficiency
-improvements, or ROI must be attributed explicitly to the company's own claim, not treated as
-independently verified.
+not uniformly solid, and don't reduce to a single quality tier: 8 of the 11 draw on
+company-reported operational data (usage logs, adoption tracking), but that group itself ranges
+from BGEO-UC-002's five precise, independent metrics to a ceiling figure with no stated average or
+sample size (RELX). The remaining 3 rest on a self-reported employee survey (AstraZeneca), one
+named employee's account in a vendor's own marketing case study (Hiscox), and a rough, unsupported
+magnitude (Centrica). None of the 11 — including the 8 operational-data rows — is independently
+audited; all are self-reported by the company or its technology partner. **This dataset is
+better-suited to answering "is the company doing X with generative AI" than "is X working" or "how
+much value did X create," even after this correction.** Any report language about productivity
+gains, efficiency improvements, or ROI must be attributed explicitly to the company's own claim,
+not treated as independently verified.
 
 16% of disclosed evidence (9/58 rows) is `evidence_origin=technology_partner` — i.e. sourced from
 a vendor/partner case study rather than the company's own disclosure (e.g. Investec's Copilot for
@@ -413,8 +430,10 @@ dataset cannot resolve).
    companies may simply have stronger disclosure cultures around technology than mining or tobacco
    companies, independent of actual GenAI use).
 5. **Evidence-strength variation (§6).** Roughly half of disclosed use cases rest on `2_moderate`
-   evidence; 11 of 58 rows have a measured, quantified outcome (corrected 2026-08-09, was
-   recorded as 1), but all 11 are company-self-reported figures, not independently audited.
+   evidence; 11 of 58 rows have a measured, quantified outcome (corrected 2026-08-09, was recorded
+   as 1), but they span a real range of evidentiary strength — 8 company-reported operational, 1
+   self-reported survey, 1 single-employee vendor anecdote, 1 vague magnitude estimate — and none
+   is independently audited.
 6. **Likely under-reporting of internal deployments.** Given that 55% of disclosed use cases are
    already internal/employee-facing rather than customer-facing (corrected 2026-08-09, was
    recorded as 60%), and companies have limited
@@ -471,13 +490,15 @@ dataset cannot resolve).
    validation — rather than being deployed as unmitigated autonomous decision-makers. *Qualification:*
    this is the strongest single piece of evidence in the dataset for the selective-deployment
    thesis, but it describes disclosed design choices, not independently verified safety outcomes.
-6. **A minority of claimed benefits are measured, and even those are company-self-reported**: 11
-   of 58 disclosed use cases (19%, corrected 2026-08-09 from an original count of 1/58) carry a
-   quantified benefit figure in their source quotation; 40% are merely "expected." *Qualification:*
-   none of the 11 measured figures is independently audited (they are survey samples, pilot-phase
-   measurements, or single-quarter snapshots reported by the company itself) — this dataset still
-   cannot support any claim about GenAI's actual, verified productivity or financial impact at
-   FTSE 100 companies, only about what companies report having measured or say they expect.
+6. **A minority of claimed benefits are measured, and they vary considerably in evidentiary
+   strength**: 11 of 58 disclosed use cases (19%, corrected 2026-08-09 from an original count of
+   1/58) carry a quantified benefit figure — 8 from company-reported operational data, 1 from an
+   employee survey, 1 a single vendor-sourced anecdote, and 1 a vague magnitude estimate; 40% are
+   merely "expected." *Qualification:* none of the 11 is independently audited, and even the 8
+   operational-data figures range from precise multi-metric disclosures (Lion Finance Group) to
+   unaveraged ceiling claims (RELX) — this dataset still cannot support any claim about GenAI's
+   actual, verified productivity or financial impact at FTSE 100 companies, only about what
+   companies report having measured or say they expect.
 7. **Sector adoption varies widely (Banks 100%, Media 75%, Mining 17% among sectors with ≥3
    researched companies) but nearly every sector cell is too small for statistical inference.**
    *Qualification:* differences plausibly reflect disclosure culture and business-model fit as

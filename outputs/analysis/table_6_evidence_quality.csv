@@ -8,7 +8,11 @@ confidence_58_disclosed,medium,28,48.3%
 confidence_58_disclosed,high,30,51.7%
 evidence_origin_58_disclosed,company_primary,49,84.5%
 evidence_origin_58_disclosed,technology_partner,9,15.5%
-benefit_evidence_58_disclosed,measured,11,19.0%
+benefit_evidence_58_disclosed,measured_aggregate_company_reported,8,13.8%
+benefit_evidence_58_disclosed,measured_survey_sample_self_reported,1,1.7%
+benefit_evidence_58_disclosed,measured_single_anecdote_vendor_sourced,1,1.7%
+benefit_evidence_58_disclosed,measured_imprecise_magnitude_single_example,1,1.7%
+benefit_evidence_58_disclosed,measured_total,11,19.0%
 benefit_evidence_58_disclosed,observed_unquantified,24,41.4%
 benefit_evidence_58_disclosed,expected,23,39.7%
-benefit_evidence_58_disclosed_note,"corrected 2026-08-09 after full-population recheck against evidence_quotation text; see outputs/analysis/disclosed_use_case_spot_check.md -- 10 of 58 rows moved to measured (was 1, now 11)",,
+benefit_evidence_58_disclosed_note,"corrected 2026-08-09 after full-population recheck against evidence_quotation text (10 of 58 rows moved to measured, was 1 now 11); tiered 2026-08-11 into four evidentiary-strength categories -- see outputs/analysis/disclosed_use_case_spot_check.md",,
