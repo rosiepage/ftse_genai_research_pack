@@ -656,30 +656,52 @@ solid* the "measured" figure actually is. This field records that distinction. *
 this analysis file and the derived `outputs/analysis/` tables -- it is not added to
 `use_case_dataset_template.csv`,** per instruction; the live dataset's own schema is not modified.
 
-Three values, as specified:
+Four values (revised 2026-08-11 -- see correction note below):
 - `aggregate_company_reported` -- a company-wide (or clearly-scoped, e.g. named pilot-population)
-  stated metric.
+  figure drawn from the company's own operational data (usage logs, adoption tracking, platform
+  telemetry) rather than a subjective survey. **This tier spans a real range of precision, not a
+  single quality level**: BGEO-UC-002 gives five independent, exact, multi-metric figures;
+  BT-UC-004, SHEL-UC-001 and AV-UC-001 give a single clear comparison each; SPX-UC-001's figure is
+  qualified "approximately"; REL-UC-002's is a ceiling ("up to 66 percent") with no stated average
+  or sample size; and INVP-UC-001's headline figure is the company's own hedged estimate built on
+  top of a real tracked comparison (see its own note below). Being in this tier means the
+  underlying data source is operational/company-wide, not that every figure in it is equally
+  exact.
+- `survey_sample_self_reported` -- a subjective, self-reported perception from a defined sample of
+  people (a questionnaire result), rather than a system-logged usage or outcome metric.
 - `single_anecdote_vendor_sourced` -- n=1, sourced from vendor marketing material rather than the
   company's own reporting.
 - `imprecise_magnitude_single_example` -- a vague order-of-magnitude figure tied to one
   illustrative example, not a program-wide number.
 
+**Correction (2026-08-11):** AZN-UC-002 was originally placed in `aggregate_company_reported`
+alongside BGEO-UC-002, on the reasoning that both were "already measured, so they must be
+comparable." They aren't: BGEO-UC-002's figures (assistants built, hours freed, adoption rate,
+interaction count, document-analysis-time reduction) are system-logged operational data; AZN-UC-002's
+figure ("92% of 1,200 employees **surveyed**... **report experiencing** time savings") is a
+questionnaire result -- a different kind of evidence, not a weaker version of the same kind. Moved
+to its own tier, `survey_sample_self_reported`. **Not resolved here:** REL-UC-002's quote ("early
+access users **reported** time savings of up to 66 percent") uses the same self-report framing as
+AZN-UC-002 ("users reported" vs. "employees surveyed...report") and arguably belongs in the same
+tier -- flagged, not moved, since only AZN-UC-002 was raised for reconsideration.
+
 | record_id | Company | measurement_basis | Note |
 |---|---|---|---|
-| AZN-UC-002 | AstraZeneca | aggregate_company_reported | Not one of the 10 reclassified this session -- already `measured` beforehand. Included here because the field applies to every `measured` row. 1,200-employee survey; own `quantified_metric` field already caveats it as "surveyed sample, not company-wide." |
-| REL-UC-002 | RELX | aggregate_company_reported | As specified. |
+| AZN-UC-002 | AstraZeneca | **survey_sample_self_reported** | Corrected 2026-08-11 (was aggregate_company_reported). 1,200-employee survey; own `quantified_metric` field already caveats it as "surveyed sample, not company-wide." |
+| REL-UC-002 | RELX | aggregate_company_reported | As specified -- but see the flagged self-report similarity to AZN-UC-002, above, not yet acted on. |
 | BT-UC-004 | BT Group | aggregate_company_reported | As specified. |
 | SHEL-UC-001 | Shell plc | aggregate_company_reported | As specified. |
 | AV-UC-001 | Aviva | aggregate_company_reported | As specified. |
-| SPX-UC-001 | Spirax Group | aggregate_company_reported | As specified. |
+| SPX-UC-001 | Spirax Group | aggregate_company_reported | As specified; qualified "approximately." |
 | BGEO-UC-001 | Lion Finance Group | aggregate_company_reported | As specified. |
-| BGEO-UC-002 | Lion Finance Group | aggregate_company_reported | As specified. |
+| BGEO-UC-002 | Lion Finance Group | aggregate_company_reported | As specified; the clearest, most precise row in the tier. |
 | HSX-UC-002 | Hiscox | single_anecdote_vendor_sourced | As specified. |
 | CNA-UC-001 | Centrica | imprecise_magnitude_single_example | As specified. |
-| INVP-UC-001 | Investec | aggregate_company_reported | **Not pre-assigned -- my classification, flagged for override.** The underlying figure is bank-wide and grounded in a stated comparison methodology (Copilot's own tracked metrics, legacy-system bankers vs. Copilot-using bankers), which is why it doesn't fit `single_anecdote` or `imprecise_magnitude` -- but it is also the only `aggregate_company_reported` row whose captured `evidence_quotation` is itself hedged as a company estimate ("we're estimating...approximately"), unlike the other 8 in this category. |
+| INVP-UC-001 | Investec | aggregate_company_reported | Not pre-assigned -- my classification, flagged for override. The underlying figure is bank-wide and grounded in a stated comparison methodology (Copilot's own tracked metrics, legacy-system bankers vs. Copilot-using bankers), which is why it doesn't fit `single_anecdote` or `imprecise_magnitude` -- but its captured `evidence_quotation` is itself hedged as a company estimate ("we're estimating...approximately"), unlike the other rows in this tier. |
 
-**Resulting tier counts among the 11 `measured` rows:** aggregate_company_reported 9,
-single_anecdote_vendor_sourced 1, imprecise_magnitude_single_example 1.
+**Resulting tier counts among the 11 `measured` rows:** aggregate_company_reported 8,
+survey_sample_self_reported 1, single_anecdote_vendor_sourced 1,
+imprecise_magnitude_single_example 1.
 
 ---
 
