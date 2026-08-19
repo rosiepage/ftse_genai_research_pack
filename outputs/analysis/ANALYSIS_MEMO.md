@@ -103,9 +103,10 @@ analysis of what the 13 blocked companies could do to Denominator A.
 | 4 | 2 |
 
 Most adopting companies (26/38 = 68%) have exactly one disclosed use case. A small number of
-companies with the richest, most itemised disclosures (RELX, BAE Systems, Aviva, BT Group,
-Diageo, Lion Finance Group, Standard Chartered, HSBC, Hiscox, Schroders — companies with 2–4
-disclosed rows) disproportionately shape the operational-use-case totals; see §5.
+companies with the richest, most itemised disclosures (BT Group and RELX with 4 disclosed rows
+each; AstraZeneca, Diageo, Aviva and BAE Systems with 3 each; Vodafone Group, HSBC, Standard
+Chartered, Schroders, Hiscox and Lion Finance Group with 2 each — 12 companies with 2–4 disclosed
+rows in total) disproportionately shape the operational-use-case totals; see §5.
 
 ---
 
@@ -228,9 +229,10 @@ does not neatly cover, which is itself relevant to how the report frames the sui
 framework's scope.
 
 **What the dataset cannot show:** none of the 58 use cases includes a rigorous, independently
-verified before/after controlled comparison — the 11 rows coded `measured` (§3/§6) are all
-company-self-reported figures (survey samples, pilot-phase measurements, single-quarter
-snapshots), not audited or externally validated outcomes. The task-suitability classification above is a structural judgement about the *kind* of
+verified before/after controlled comparison — the 11 rows coded `measured` are not uniformly
+strong evidence either (see §6 for the full four-tier breakdown: 8 aggregate company-reported
+figures, 1 self-reported survey, 1 vendor-sourced anecdote, 1 vague magnitude estimate), and none
+is audited or externally validated. The task-suitability classification above is a structural judgement about the *kind* of
 task, not a verdict on whether each deployment is actually succeeding. **The thesis is about
 selecting tasks appropriately, not about proving those tasks are always executed well — this
 dataset can speak to the former far more confidently than the latter.**
@@ -254,7 +256,7 @@ Coca-Cola Europacific Partners, DCC plc, Diploma, Fresnillo, Howdens Joinery, IG
 & Resorts, Informa, Intermediate Capital Group, International Airlines Group, JD Sports, Prudential
 plc, Smiths Group, St. James's Place, Standard Life, Tritax Big Box REIT, Weir Group, and
 Whitbread. This directly answers `01_PROJECT_BRIEF.md` subquestion 2 (proportion of live vs
-planned/ambition-only disclosures) at the company level: **roughly 4 in 10 evidence-based
+planned/ambition-only disclosures) at the company level: **roughly 3 in 10 evidence-based
 companies discuss AI strategy or governance without a single use case meeting this project's
 operational bar.** Full list in `table_5_strategic_governance_vs_operational.csv`.
 
