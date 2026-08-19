@@ -457,6 +457,14 @@ dataset cannot resolve).
 10. **Sector-label data-quality gap (§1).** Two case-inconsistent sector-label pairs survived
     despite an explicit coding-manual rule against them — a small but real illustration that even
     carefully specified controlled vocabularies can drift in a long-running, multi-session project.
+11. **claimed_benefits field reliability.** This field may in some rows reflect the coder's
+    plausible inference from a tool's described function (e.g. inferring `productivity` from a
+    quote that only describes what a tool does), rather than a benefit the company explicitly
+    stated in the source text. This pattern was noted in at least 6 of the 20 rows in the random
+    spot-check sample (`outputs/analysis/disclosed_use_case_spot_check.md`) — Tesco, GSK, Standard
+    Chartered, SSE, Severn Trent, and London Stock Exchange Group — but has not been independently
+    re-audited across all 58 rows this session. Treat `claimed_benefits` distributions in this
+    report as indicative, not verified to the same standard as `benefit_evidence`.
 
 ---
 
