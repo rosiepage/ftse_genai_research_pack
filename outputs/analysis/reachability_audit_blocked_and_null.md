@@ -60,6 +60,18 @@ OCR is never invoked anywhere in this pipeline, for any company, regardless of f
 
 ## Blocked companies (13)
 
+**Correction (2026-09-04):** the two rows below marked with an asterisk were originally populated
+by mechanically concatenating each company's raw `blocker_type` field values from
+`manual_browser_resolution_queue_controller.csv`, which is imprecise where a company has multiple
+queue rows with differently-worded (but consistent) `blocker_type` labels. Re-read directly
+against each row's own `notes` text (the actual retry-attempt record, and the more reliable
+source): **Lloyds Banking Group**'s three queue rows all describe the same Cloudflare "Error 1007"
+block page, not a generic application error; **Sage Group**'s three queue rows all describe a
+persistent HTTP 403, including the one row whose `blocker_type` field says
+`document_location_only` (its own notes read "HTTP 403 Forbidden retrying the main sustainability
+landing page"). Sage Group therefore belongs with the other nine plain-403 companies below, not
+grouped with Lloyds.
+
 | Company | Sector | Blocker type | Document format encountered | OCR attempted |
 |---|---|---|---|---|
 | Associated British Foods | Food & tobacco | 403_domain_wide | unknown - blocked before any document was ever opened | No |
@@ -71,7 +83,7 @@ OCR is never invoked anywhere in this pipeline, for any company, regardless of f
 | Haleon | Pharmaceuticals & biotechnology | 403_domain_wide | unknown - blocked before any document was ever opened | No |
 | IMI | Industrial engineering | 403_domain_wide | unknown - blocked before any document was ever opened | No |
 | Imperial Brands | Tobacco | 403_domain_wide | unknown - blocked before any document was ever opened | No |
-| Lloyds Banking Group | Banks | application_error_domain_wide;document_location_only | unknown - blocked before any document was ever opened | No |
+| Lloyds Banking Group | Banks | *cloudflare_error_1007 (corrected 2026-09-04, was application_error_domain_wide;document_location_only) | unknown - blocked before any document was ever opened | No |
 | M&G | Financial services | encrypted_pdf_extraction_blocked | native_pdf (downloaded, but AES-encrypted -- extraction blocked) | No |
-| Sage Group | Software & computer services | 403_domain_wide;document_location_only | unknown - blocked before any document was ever opened | No |
+| Sage Group | Software & computer services | *403_domain_wide (corrected 2026-09-04, was 403_domain_wide;document_location_only) | unknown - blocked before any document was ever opened | No |
 | Unilever | Personal goods | 403_domain_wide | unknown - blocked before any document was ever opened | No |
