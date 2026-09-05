@@ -141,12 +141,22 @@ quotations were found to name an external party the original coding missed --
 1 (2%); developers 1 (2%). (Same 2026-08-09 correction as orientation, above.)
 
 **Technology partner** (named, n=58, some rows list more than one): Microsoft 13 (22%, by far the
-most frequently named — mostly Microsoft 365/GitHub Copilot variants); AWS 3 (5%, plus 1 more
-counted separately as "Amazon Web Services (AWS)"); Google/Google Cloud 3 combined; no external
-partner named (proprietary/in-house or unclear) 12 (21%). This directly matches
+most frequently named — mostly Microsoft 365/GitHub Copilot variants); AWS/Amazon 5 (9%); Google
+4 (7%); no external partner named (proprietary/in-house or unclear) 12 (21%). This directly matches
 `01_PROJECT_BRIEF.md` subquestion 5 ("which model providers and technology partners are most
 frequently named") — Microsoft's Copilot family is the single dominant technology signature in
 this dataset.
+
+**Correction (2026-09-05):** the AWS and Google counts above were originally undercounted, both
+for the same reason — the same vendor recorded under more than one text label. AWS/Amazon was
+recorded as "AWS" 3 (5%) "plus 1 more" 1, missing a third variant entirely; the true count is
+**5** (**9%**), across three distinct labels: "AWS" (BT-UC-001, BT-UC-002, BT-UC-004, all BT
+Group), "Amazon Web Services (AWS)" (AZN-UC-003, AstraZeneca), and "Amazon AWS (also named:
+Phantom, Hybrid Software, GMG, Roland DG)" (DGE-UC-001, Diageo). Google was originally recorded
+as "3 combined," missing REL-UC-001's multi-partner row ("Anthropic; Google; OpenAI (underlying
+model providers)"), which a plain "Google Cloud" string match does not catch; the true count is
+**4** (**7%**): HSBA-UC-001 (HSBC), RTO-UC-001 (Rentokil Initial), HSX-UC-001 (Hiscox), and
+REL-UC-001 (RELX).
 
 **Claimed benefits** (multi-label, n=58 rows): productivity 29 (50%); time_saving 25 (43%);
 service_quality 8 (14%); personalisation 4 (7%); accuracy 4 (7%); risk_reduction 3 (5%);
