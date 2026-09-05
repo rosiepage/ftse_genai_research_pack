@@ -375,6 +375,17 @@ window and toolset, or the disclosure may exist in a source category (e.g. a ded
 sustainability report, an investor presentation, a press release) that was not exhaustively pursued
 for that specific company.
 
+**Targeted check (2026-09-05):** after finding the §7 conflation above (a single "47 of 49" figure
+that silently combined two separate status-field conditions with an implicit AND), this memo was
+searched specifically for any other headline count built the same way — two independent
+status/boolean fields combined into one number without the joint condition being separately
+verified. This was a targeted search for that one error pattern, not a full re-audit of every
+figure in the memo. **No other instance was found.** Every other count and percentage in this
+memo that involves more than one field (the checkpoint-discrepancy figures in §1, the technology-
+partner label-variant counts in §3, the four-tier `benefit_evidence` breakdown in §6) was either
+already computed as a genuine joint condition, or is a sum of mutually exclusive categories rather
+than an AND of independent fields.
+
 ---
 
 ## 8. Blocked-company sensitivity analysis
