@@ -58,7 +58,10 @@ different text labels for the same vendor — **BT Group** ×3, **AstraZeneca**,
 **Google** (**4**, **7%**: **HSBC**, **Rentokil Initial**, **Hiscox**, and **RELX**, the last of
 which names Google alongside two other model providers in a single row). **12** use cases
 (**21%**) name no external technology partner at all (in-house or proprietary tooling, or the
-partner is unclear).
+partner is unclear). Like `claimed_benefits`, this field is multi-value: **4** of the **58** rows
+name more than one partner (for example RELX's single row names Anthropic, Google, *and* OpenAI
+together), for **41** total individual partner labels across the 58 rows overall — so the
+percentages above should not be read as mutually exclusive shares that sum to 100%.
 
 ## 3. Talk versus deployment
 

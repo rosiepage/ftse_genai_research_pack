@@ -158,6 +158,14 @@ model providers)"), which a plain "Google Cloud" string match does not catch; th
 **4** (**7%**): HSBA-UC-001 (HSBC), RTO-UC-001 (Rentokil Initial), HSX-UC-001 (Hiscox), and
 REL-UC-001 (RELX).
 
+**`technology_partner` is also multi-value, same as `claimed_benefits`.** **4** of the **58**
+rows name more than one partner (REL-UC-001: "Anthropic; Google; OpenAI"; AV-UC-003: "Microsoft;
+GitHub"; STAN-UC-002: "GitHub; Anthropic"; CTEC-UC-001: "Microsoft; Synthesia"), for **41** total
+individual partner labels across the 58 rows (**36** of the 58 name at least one partner; the
+other **22** are `not_applicable` or `unclear`). This is why the four percentages given above
+(Microsoft 22%, AWS/Amazon 9%, Google 7%, none named 21%) do not need to sum to 100% and should
+not be read as if they were mutually exclusive categories.
+
 **Claimed benefits** (multi-label, n=58 rows): productivity 29 (50%); time_saving 25 (43%);
 service_quality 8 (14%); personalisation 4 (7%); accuracy 4 (7%); risk_reduction 3 (5%);
 none_stated 3 (5%); accessibility 3 (5%); innovation 2 (3%); cost_reduction 2 (3%).
