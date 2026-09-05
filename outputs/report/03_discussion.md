@@ -85,9 +85,11 @@ good fit." This is the modal pattern, but not an overwhelming one: **36%** of di
 exclusive: **8** apply generative techniques to structured or non-language input
 (**Rolls-Royce**'s engine-design generation, **Shell**/SparkCognition's seismic-image generation,
 **Diageo**'s bottle-personalisation platform, and others); **3** have a mixed input type; **4**
-have an output that leans toward classification rather than genuine generation; and a **separate
-19%** (**11** of **58**) carry a high cost of error if wrong. These groups overlap rather than add
-cleanly to 21: **Shell**'s use case is both structured-input and high-cost; **HSBC**'s
+have an output that leans toward classification rather than genuine generation; and **11** carry
+a high cost of error if wrong. (This **19%**/**11** figure is coincidentally identical to, but
+describes a different set of rows than, the measured-benefit **19%**/**11** figure in Section 1.)
+These groups overlap rather than add cleanly to 21: **Shell**'s use case is both structured-input
+and high-cost; **HSBC**'s
 decision-assistant partnership is mixed-input, mixed-output, *and* high-cost at once;
 **Legal & General**'s Copilot rollout is mixed-input and mixed-output; and **BAE Systems**'
 drone-command use case is mixed-output and high-cost.
