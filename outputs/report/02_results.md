@@ -79,8 +79,10 @@ evidenced. The claimed-benefit distribution itself should be read cautiously: th
 review found that in at least **6** of a **20**-row random sample, a claimed benefit (most often
 "**productivity**") appears to have been inferred by the coder from what a tool does, rather than
 stated by the company — a limitation this report has not resolved across all **58** rows (see
-Limitations, item 11). With that caveat, the most frequently claimed benefits are
-**productivity** (**29**, **50%**) and **time_saving** (**25**, **43%**), followed by
+Limitations, item 11). This field is multi-select — a use case can carry more than one claimed
+benefit, and **25** of the **58** rows do (**83** benefit labels in total across 58 rows), which
+is why the percentages below sum to well over 100%. With that caveat, the most frequently claimed
+benefits are **productivity** (**29**, **50%**) and **time_saving** (**25**, **43%**), followed by
 **service_quality** (**8**, **14%**) and smaller categories.
 
 The strength of evidence behind those claims is uneven, and was itself corrected during this

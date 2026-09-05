@@ -161,6 +161,10 @@ REL-UC-001 (RELX).
 **Claimed benefits** (multi-label, n=58 rows): productivity 29 (50%); time_saving 25 (43%);
 service_quality 8 (14%); personalisation 4 (7%); accuracy 4 (7%); risk_reduction 3 (5%);
 none_stated 3 (5%); accessibility 3 (5%); innovation 2 (3%); cost_reduction 2 (3%).
+**`claimed_benefits` is a multi-select field: a use case can carry more than one claimed benefit.**
+**25** of the **58** rows carry more than one value (e.g. `time_saving;productivity`), for **83**
+total benefit labels across 58 rows — which is why the percentages above sum to well over 100%,
+correctly.
 
 **Benefit evidence** (n=58): expected 23 (40%); observed_unquantified 24 (41%); measured 11
 (19%) — of which 8 are company-reported operational figures (though ranging from BGEO's five
