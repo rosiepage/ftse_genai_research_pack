@@ -169,12 +169,14 @@ incidents.
 
 **49** of the **87** evidence-based companies (**56.3%** of that group, **49.0%** of the full
 population) were fully researched and yielded no qualifying generative-AI disclosure. This is a
-substantive finding, not a gap in effort: for **47** of the **49**, both required annual reports
-were collected and reviewed. But **none** of the **49** has been through this project's own
-strict, human-certified process for asserting "no disclosure" — for **47** of them, one specific
-collection field (whether a separate sustainability report was collected) was simply never
-advanced to a completed state, even in cases where sustainability content is plausibly integrated
-into the already-reviewed annual report.
+substantive finding, not a gap in effort, but it rests on three distinct counts that should not be
+collapsed into one: **46** of the **49** have both required annual reports collected and
+reviewed (the other **3** — Admiral Group, Melrose Industries, and F&C Investment Trust — each
+have at least one annual report not yet collected); separately, **47** of the **49** have the
+sustainability-report collection field still stuck at "not started" (the other **2** — Informa and
+Whitbread — have it marked collected); and only **44** of the **49** satisfy *both* conditions at
+once. **None** of the **49** has been through this project's own strict, human-certified process
+for asserting "no disclosure."
 
 The accurate statement for every company in this group is **"no qualifying evidence was
 identified in the sources collected and reviewed for this company,"** not **"this company does

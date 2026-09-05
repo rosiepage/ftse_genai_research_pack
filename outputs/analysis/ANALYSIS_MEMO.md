@@ -344,15 +344,26 @@ be flagged as such wherever cited in the final report.
 `no_disclosure_confirmed` certification.** All 49 remain at `no_disclosure_confirmed =
 pending_sources` in `company_summary_template.csv` — the coding manual's own rule states this
 value is set "manually by a human reviewer, and only once" a five-point checklist is satisfied,
-including that no collection field is left at `not_started`. Investigating why: for 47 of the 49,
-`annual_report_latest_collected` and `annual_report_previous_collected` are both `collected` (i.e.
-the core sources were obtained and reviewed), but `separate_sustainability_report_collected` is
-still `not_started` — never advanced to `collected`, `unavailable`, or `not_applicable`, even in
-cases where sustainability content is plausibly integrated into the collected annual report (the
-coding manual explicitly permits `not_applicable` for exactly this scenario, but the field was
-never updated to reflect it). `official_web_search_completed` is `incomplete` for 5 of the 49.
+including that no collection field is left at `not_started`. Investigating why, three distinct
+counts (corrected 2026-09-05 — these were previously conflated into a single "47 of 49" figure,
+which combined two different conditions as though they were one):
+- **46** of the **49** have both `annual_report_latest_collected` and
+  `annual_report_previous_collected` set to `collected` (i.e. both required annual reports were
+  obtained and reviewed). The other **3** (Admiral Group, Melrose Industries, F&C Investment
+  Trust) each have at least one annual report still at `not_started`.
+- **47** of the **49** have `separate_sustainability_report_collected` still at `not_started` —
+  never advanced to `collected`, `unavailable`, or `not_applicable`, even in cases where
+  sustainability content is plausibly integrated into the collected annual report (the coding
+  manual explicitly permits `not_applicable` for exactly this scenario, but the field was never
+  updated to reflect it). The other **2** (Informa, Whitbread) have this field marked `collected`.
+- **44** of the **49** satisfy *both* conditions at once (both annual reports collected, and the
+  sustainability field still `not_started`) — this is the correct joint figure; it is smaller
+  than either individual count above because the 3-company and 2-company exception groups do not
+  fully overlap.
 
-**Practical reading:** for the large majority of null-result companies, the core, highest-value
+`official_web_search_completed` is `incomplete` for 5 of the 49.
+
+**Practical reading:** for **46** of the **49** null-result companies, the core, highest-value
 sources (both years' annual reports) were genuinely collected and reviewed with no qualifying
 generative-AI disclosure found — this is real negative evidence, not an absence of effort. But
 none of them has been through the exhaustive, multi-source, human-certified closure process the
