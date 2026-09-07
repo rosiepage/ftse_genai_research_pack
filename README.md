@@ -32,6 +32,25 @@ marketing language are excluded by design, not just in principle.
 **Read the full report:** [`outputs/report/FTSE100_GenAI_Report_FINAL.md`](outputs/report/FTSE100_GenAI_Report_FINAL.md)
 *(currently marked in the document itself as a full first draft, provisional pending a final read-through).*
 
+## How this project was built
+
+This project was built primarily using Claude Code (Anthropic's CLI coding agent), directed and
+verified at every stage rather than run once and accepted. Claude Code handled data extraction,
+coding, and the report drafting itself; my role was to design the verification process, review
+its output at each stage, and push back when something needed fixing.
+
+That process caught and corrected real errors along the way — a technology-partner count that
+undercounted due to inconsistent data labeling, a null-result figure that silently combined two
+different conditions into one, a "measured outcome" statistic that was off by a factor of 10
+before a full re-check, and a task-classification breakdown that didn't sum to its own stated
+total, among others. Each fix is its own independent, reviewed commit in the git history, not a
+single AI-generated document accepted as-is.
+
+The full record of every wording judgment call made while drafting the final report — each
+checked against a "state the fact plainly, not how it should make the reader feel" standard — is
+kept separately in AUDIT_TRAIL_judgment_calls.md, so the reasoning behind the report's language is
+as inspectable as the data itself.
+
 ## Methodology and Verification
 
 The dataset was built from a fixed source-discovery process (two annual reports per company plus,
