@@ -1,10 +1,8 @@
 # Results
 
-*Draft section — Results only, following the approved Methodology and Limitations section.
-Discussion, Introduction and Conclusion are not yet drafted. All figures below are drawn from the
-final, corrected state of `ANALYSIS_MEMO.md` §§2–7, current as of this draft.*
+*All figures below are drawn from the final, corrected state of `ANALYSIS_MEMO.md` §§2–7.*
 
-## 1. How many companies, and how many use cases
+## Results 1. How many companies, and how many use cases
 
 Of the **100** FTSE 100 constituents in the population, **38** have at least one disclosed
 generative-AI use case meeting this report's inclusion bar — **38.0%** of the full population, or
@@ -24,7 +22,7 @@ companies accounted for the remaining **32** use cases. The richest disclosures 
 with unusually detailed public disclosure practices therefore shape a disproportionate share of
 what this report can say about *how* generative AI is being used.
 
-## 2. What has been implemented
+## Results 2. What has been implemented
 
 **Deployment stage.** **86%** of the **58** disclosed use cases are already live in some form:
 **live_limited** (**26**, **45%**) or **live_scaled** (**24**, **41%**), against only **8**
@@ -63,7 +61,7 @@ name more than one partner (for example RELX's single row names Anthropic, Googl
 together), for **41** total individual partner labels across the 58 rows overall — so the
 percentages above should not be read as mutually exclusive shares that sum to 100%.
 
-## 3. Talk versus deployment
+## Results 3. Talk versus deployment
 
 A confirmed operational use case is only one of several ways a company's generative-AI activity
 can appear in this dataset. Counting any of three kinds of evidence — a disclosed operational use
@@ -75,7 +73,7 @@ governance publicly without a single use case meeting this report's operational 
 further **22** companies (**25.3%**) show no qualifying evidence of any kind — no operational use
 case, no strategic finding, no governance finding.
 
-## 4. Measurable consequences: what companies claim, and how well evidenced it is
+## Results 4. Measurable consequences: what companies claim, and how well evidenced it is
 
 Every disclosed use case was coded for its claimed benefit and for how strongly that benefit is
 evidenced. The claimed-benefit distribution itself should be read cautiously: this report's own
@@ -131,7 +129,7 @@ mid-project estimate of roughly **2%**, and the revision matters: **19%** is sti
 still entirely self-reported, but it is not "**almost no companies measure anything**" — a
 non-trivial number do, even if imperfectly.
 
-## 5. Unintended consequences: an evidentiary void, for two distinct reasons
+## Results 5. Unintended consequences: an evidentiary void, for two distinct reasons
 
 This report's research question asks about unintended consequences as well as implementation and
 measurable benefit. On that question, this dataset has almost nothing to say — and it is
@@ -168,7 +166,7 @@ from a direct, individual reading of each quotation's free text, not from these 
 fields — and it describes disclosed design choices, not verified outcomes or an absence of
 incidents.
 
-## 6. Null results: 49 companies with no qualifying evidence — and no certified non-adopters
+## Results 6. Null results: 49 companies with no qualifying evidence — and no certified non-adopters
 
 **49** of the **87** evidence-based companies (**56.3%** of that group, **49.0%** of the full
 population) were fully researched and yielded no qualifying generative-AI disclosure. This is a

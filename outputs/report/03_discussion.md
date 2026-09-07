@@ -1,11 +1,9 @@
 # Discussion
 
-*Draft section — Discussion only, following the approved Methodology, Limitations, and Results
-sections. Introduction and Conclusion are not yet drafted. All figures below restate numbers
-already established and verified in Methodology and Results; no new statistic is introduced here
-without a citation back to where it was first derived.*
+*All figures below restate numbers already established and verified in Methodology and Results;
+no new statistic is introduced here without a citation back to where it was first derived.*
 
-## 1. The central finding: what gets disclosed is not evenly distributed across the research question
+## Discussion 1. The central finding: what gets disclosed is not evenly distributed across the research question
 
 This report set out to answer a two-part question: how are **FTSE 100** companies implementing
 generative AI, and what measurable and unintended consequences has that implementation had? The
@@ -43,7 +41,7 @@ it collapses at each step.** That pattern is a finding about what FTSE 100 compa
 disclose about generative AI, not a finding about what generative AI has actually done inside
 those companies.
 
-## 2. The evidence-density cascade, stated as a sequence
+## Discussion 2. The evidence-density cascade, stated as a sequence
 
 The scale of the collapse is visible as a single sequence, each step drawn from a different
 section of this report. **The first two steps count companies, out of 87; the third counts
@@ -68,7 +66,7 @@ of the collapse in this dataset: it is not a gentle taper but a near-total drop-
 and step 4, and that drop-off is at least partly an artefact of what this project's sources were
 ever capable of showing, not solely a reflection of what companies chose to withhold.
 
-## 3. A secondary lens: what kind of tasks are being implemented
+## Discussion 3. A secondary lens: what kind of tasks are being implemented
 
 The preceding two sections describe *how much* is disclosed at each stage. A separate, narrower
 question — asked and answered only for the **58** disclosed use cases, and treated here as a
@@ -118,7 +116,7 @@ evidentiary collapse described in Sections 1 and 2 applies here too**: this repo
 what companies say they did to manage a high-stakes deployment far more confidently than it can
 say whether that management worked.
 
-## 4. Why the asymmetry might exist — more than one explanation, none of them provable here
+## Discussion 4. Why the asymmetry might exist — more than one explanation, none of them provable here
 
 This report can describe the asymmetry precisely. It cannot fully explain it, and more than one
 explanation is consistent with the same numbers.
@@ -152,7 +150,7 @@ confidence is narrower and more useful: whatever the cause, the practical effect
 public disclosure from FTSE 100 companies about generative AI is far more informative about what
 has been built than about what it has done.
 
-## 5. What this means: a finding about disclosure, not only about deployment
+## Discussion 5. What this means: a finding about disclosure, not only about deployment
 
 The thesis this report set out to examine holds, and holds specifically because of the shape of
 the evidence rather than despite it: **FTSE 100 companies' public disclosures describe generative-
@@ -173,7 +171,7 @@ FTSE 100 companies," or a claim of the form "generative AI has caused few proble
 companies" — both would require evidence this dataset does not contain, not merely evidence this
 report chose not to report.
 
-## 6. What the task-suitability lens can and cannot add to that finding
+## Discussion 6. What the task-suitability lens can and cannot add to that finding
 
 Section 3's task-based classification does not change this conclusion; it sharpens one part of
 it. The **64%** "classic good fit" figure and the disclosed-control pattern among the **11**

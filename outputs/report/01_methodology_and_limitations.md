@@ -1,14 +1,12 @@
 # Methodology and Limitations
 
-*Draft section — Methodology and Limitations only. Results, Discussion, Introduction and
-Conclusion are not yet drafted.*
+## Methodology 1. Research question and the claim under examination
 
-## 1. Research question and the claim under examination
-
-This report investigates **how FTSE 100 companies are implementing generative AI, and what
-measurable and unintended consequences that implementation has had**. That two-part question —
-implementation, then consequences — shapes every methodological choice described below, because
-the two halves turned out to require very different kinds of evidence.
+Building on the research question set out in the Introduction, this section sets out the
+population, evidence window, inclusion criteria, source discovery process, and coding framework
+used to answer it. That two-part question — implementation, then consequences — shapes every
+methodological choice described below, because the two halves turned out to require very
+different kinds of evidence.
 
 The claim this report evaluates is the following: that FTSE 100 companies' public disclosures
 describe generative-AI implementation — what has been deployed, where, and by whom — in
@@ -21,18 +19,22 @@ deployed*, *what benefit was claimed and how strongly evidenced*, and *what risk
 unintended consequences were disclosed*, precisely so these three questions could be answered (or
 found unanswerable) independently of one another.
 
-## 2. Population and evidence window
+## Methodology 2. Population and evidence window
 
 The population is the **100** constituents of the FTSE 100 following the **19 June 2026** index
-reconstitution. The evidence window runs from **1 January 2023** to **14 July 2026**. A company
-that joined the index after 19 June 2026, or left it before that date, falls outside the
-population regardless of its generative-AI activity.
+reconstitution, per `ftse100_constituents_2026-06-19.csv` (every row's `membership_effective_date`
+is `2026-06-19`) and `01_PROJECT_BRIEF.md` ("Population: companies listed in the FTSE 100
+following the 19 June 2026 changes"). The evidence window runs from **1 January 2023** to
+**14 July 2026**, per the same brief ("Evidence window: 1 January 2023 to 14 July 2026"), which
+also requires both facts to be stated in the final report, "because FTSE 100 membership changes
+over time." A company that joined the index after 19 June 2026, or left it before that date,
+falls outside the population regardless of its generative-AI activity.
 
 The unit of analysis is a single, distinct, publicly reported generative-AI use case: a
 different task, user group, business process, product, or deployment context is counted as a
 separate use case even where the same underlying model or vendor tool is involved.
 
-## 3. Inclusion criterion: what counts as a generative-AI use case
+## Methodology 3. Inclusion criterion: what counts as a generative-AI use case
 
 A source qualifies (`is_genai = yes`) only where it does at least one of the following:
 explicitly uses the term "generative AI" or "GenAI"; explicitly identifies a large language
@@ -47,7 +49,7 @@ This bar was applied conservatively throughout. Where a source used generic lang
 "AI-powered" or "AI-driven" for a feature that, on inspection, may plausibly have been
 generative, the source was excluded rather than assumed to qualify.
 
-## 4. Source discovery: what was searched for, and what was not
+## Methodology 4. Source discovery: what was searched for, and what was not
 
 Two annual reports (the latest available by **14 July 2026**, and the immediately preceding
 one) were the required minimum for every company, supplemented by a separate sustainability or
@@ -84,7 +86,7 @@ description of "what was searched for" is therefore reconstructed from the colle
 from the actual, empirical mix of source types collected (the figures in the paragraph above),
 which is the more reliable record of the two.
 
-## 5. Document reachability and format
+## Methodology 5. Document reachability and format
 
 Of the **100** companies in the population, **87** were fully researched to an evidence-based
 final status and **13** could not be researched to completion. For those **13**, source access
@@ -109,7 +111,7 @@ interpreting the null-result group specifically: their absence of qualifying evi
 attributed to a technical extraction failure. The sources were opened and read; they did not
 contain a qualifying disclosure.
 
-## 6. Coding framework and evidentiary classification
+## Methodology 6. Coding framework and evidentiary classification
 
 Every candidate use case was coded against a fixed set of controlled-vocabulary fields, including
 business function, deployment stage (`pilot`, `live_limited`, `live_scaled`, and related planned
@@ -160,7 +162,7 @@ is treated as a limitation, not a finding: these nine fields cannot support any 
 cannot be reliably distinguished from fields that were simply never actively assessed. Full detail
 is in `outputs/analysis/unclear_risk_field_audit.md`.
 
-## 7. A note on terminology: "disclosed" rather than "confirmed"
+## Methodology 7. A note on terminology: "disclosed" rather than "confirmed"
 
 The project's own working dataset uses the field name `confirmed_use_case_count` for the strict
 count of use cases meeting the inclusion bar above. That word is retained in the underlying data
@@ -172,7 +174,7 @@ what the company (or its technology partner) chose to publish. "Disclosed" is th
 for that. Nothing about the underlying inclusion criteria changed with this rename; it is a
 labelling correction, not a re-coding.
 
-## 8. Validation and this report's own audit trail
+## Methodology 8. Validation and this report's own audit trail
 
 Beyond the coding review described above, a random sample of **20** of the **58** disclosed use
 cases (drawn using a seed generated from system entropy, not hand-selected, and reproducible from
