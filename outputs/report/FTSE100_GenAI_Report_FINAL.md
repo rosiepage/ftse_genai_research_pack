@@ -307,6 +307,12 @@ finding from this project's own audit process, not a generic caveat.
    internally oriented rather than customer-facing, and companies have limited commercial
    incentive to publicise every internal tool; the true incidence of narrow, low-profile internal
    generative-AI use is almost certainly higher than what reaches annual-report-level disclosure.
+   This is not only a theoretical concern: a post-finalization spot-check of already-collected
+   sources for the 38 companies with at least one disclosed use case found three confirmed
+   instances of a second qualifying use case missed within a source this project had already
+   collected — Vodafone Group's SuperAgent, NatWest Group's Cora+, and RELX's EmbaseAI — against
+   roughly 20 other candidates from the same check that were read and correctly excluded, evidence
+   that this is a small, identified gap rather than a sign of pervasive miscoding.
 7. **Null-result interpretation.** None of the **49** null-result companies has been through this
    project's own strict, human-certified closure process for asserting "no disclosure." The
    accurate statement for each is "no qualifying evidence was identified in the sources collected
