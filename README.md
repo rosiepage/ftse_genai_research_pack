@@ -51,6 +51,13 @@ checked against a "state the fact plainly, not how it should make the reader fee
 kept separately in AUDIT_TRAIL_judgment_calls.md, so the reasoning behind the report's language is
 as inspectable as the data itself.
 
+This is my first project built primarily with Claude Code. I ran the verification process
+described above as thoroughly as I currently know how — designing checks, pushing back when
+something looked shallow, and catching real errors along the way (the git history and audit
+trail above are the evidence of that). That said, since this workflow is new to me, it's likely
+some issues remain that I wasn't yet equipped to catch. If you spot something, I'd genuinely
+welcome the feedback.
+
 ## Methodology and Verification
 
 The dataset was built from a fixed source-discovery process (two annual reports per company plus,
