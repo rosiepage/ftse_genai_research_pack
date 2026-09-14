@@ -1,6 +1,6 @@
 # How Are FTSE 100 Companies Using Generative AI?
 
-**Status: full first draft, provisional pending final read-through.**
+**Status: final.**
 
 ## Table of contents
 

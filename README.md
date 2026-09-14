@@ -30,7 +30,7 @@ marketing language are excluded by design, not just in principle.
   cannot make any reliable aggregate claim about disclosed risk, harm, or governance controls.
 
 **Read the full report:** [`outputs/report/FTSE100_GenAI_Report_FINAL.md`](outputs/report/FTSE100_GenAI_Report_FINAL.md)
-*(currently marked in the document itself as a full first draft, provisional pending a final read-through).*
+*(marked in the document itself as final, following a complete end-to-end read-through by the project owner).*
 
 ## How this project was built
 
